@@ -1,0 +1,1017 @@
+{
+    "items": [
+        {
+            "title": "Masjid-E-Taqwa",
+            "id": "here:pds:place:356tf341-364ff02eba4b61f96c82d1a96664a869",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjid-E-Taqwa, Jafferkhanpet Main Road, R V Nagar, Jafferkhanpet, Chennai 600083, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Jafferkhanpet",
+                "subdistrict": "R V Nagar",
+                "street": "Jafferkhanpet Main Road",
+                "postalCode": "600083"
+            },
+            "position": {
+                "lat": 13.02933,
+                "lng": 80.2117
+            },
+            "access": [
+                {
+                    "lat": 13.02946,
+                    "lng": 80.21173
+                }
+            ],
+            "distance": 963,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1069922713"
+                }
+            ]
+        },
+        {
+            "title": "Masjitul Haa Pizz",
+            "id": "here:pds:place:356tf341-ead8f3ad10ee4b569f5a7e4b8a192371",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjitul Haa Pizz, Saidapet, Chennai 600015, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Saidapet",
+                "postalCode": "600015"
+            },
+            "position": {
+                "lat": 13.02172,
+                "lng": 80.22486
+            },
+            "access": [
+                {
+                    "lat": 13.02174,
+                    "lng": 80.22495
+                }
+            ],
+            "distance": 1173,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1100409900"
+                }
+            ]
+        },
+        {
+            "title": "Jamia Mosque",
+            "id": "here:pds:place:356jx7ps-aca83b15b9b00cfb6d2268156a56401e",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Jamia Mosque, S Usman Road, T Nagar, Chennai 600017, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "T Nagar",
+                "street": "S Usman Road",
+                "postalCode": "600017"
+            },
+            "position": {
+                "lat": 13.03926,
+                "lng": 80.23094
+            },
+            "access": [
+                {
+                    "lat": 13.03917,
+                    "lng": 80.23141
+                }
+            ],
+            "distance": 1448,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                },
+                {
+                    "id": "300-3200-0000",
+                    "name": "Religious Place"
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1105267512"
+                }
+            ]
+        },
+        {
+            "title": "Madarasa Manarul Heetha",
+            "id": "here:pds:place:356tf341-b9a7aa8f43ea421393ff3fbc0587f8b5",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Madarasa Manarul Heetha, Chetty Garden, Saidapet, Chennai 600015, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Saidapet",
+                "subdistrict": "Chetty Garden",
+                "postalCode": "600015"
+            },
+            "position": {
+                "lat": 13.01844,
+                "lng": 80.21714
+            },
+            "access": [
+                {
+                    "lat": 13.0183,
+                    "lng": 80.2171
+                }
+            ],
+            "distance": 1473,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1100410618"
+                }
+            ]
+        },
+        {
+            "title": "Mosque",
+            "id": "here:pds:place:356jx7ps-25cea112640f030ee22080325e6ad008",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Mosque, Rangarajapuram Colony Street, Nagarjuna Nagar, Kodambakkam, Chennai 600024, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kodambakkam",
+                "subdistrict": "Nagarjuna Nagar",
+                "street": "Rangarajapuram Colony Street",
+                "postalCode": "600024"
+            },
+            "position": {
+                "lat": 13.04536,
+                "lng": 80.22358
+            },
+            "access": [
+                {
+                    "lat": 13.04537,
+                    "lng": 80.22368
+                }
+            ],
+            "distance": 1601,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1083565866"
+                }
+            ]
+        },
+        {
+            "title": "Masjid",
+            "id": "here:pds:place:356tf341-072f3cc0e0ec4daeb072b9a9eac9f85a",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjid, NH-45, East C I T Nagar, Nandanam, Chennai 600035, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Nandanam",
+                "subdistrict": "East C I T Nagar",
+                "street": "NH-45",
+                "postalCode": "600035"
+            },
+            "position": {
+                "lat": 13.02793,
+                "lng": 80.23495
+            },
+            "access": [
+                {
+                    "lat": 13.02781,
+                    "lng": 80.23502
+                }
+            ],
+            "distance": 1626,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1069917972"
+                }
+            ],
+            "contacts": [
+                {
+                    "phone": [
+                        {
+                            "value": "+914430272852"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Masjidul Hudha & Manarul Hudha Arabic Association",
+            "id": "here:pds:place:356jx7ps-59d1431d74cb001842862f9970c32a3f",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjidul Hudha & Manarul Hudha Arabic Association, 3rd Street, Kamaraj Colony, Kodambakkam, Chennai 600024, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kodambakkam",
+                "subdistrict": "Kamaraj Colony",
+                "street": "3rd Street",
+                "postalCode": "600024"
+            },
+            "position": {
+                "lat": 13.0503,
+                "lng": 80.21968
+            },
+            "access": [
+                {
+                    "lat": 13.05038,
+                    "lng": 80.21968
+                }
+            ],
+            "distance": 2113,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1123046418"
+                }
+            ]
+        },
+        {
+            "title": "Masjid-E-Ajesha",
+            "id": "here:pds:place:356jx7ps-875d9772d72105853bcdc3763d87d034",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjid-E-Ajesha, Nagathamman Koil Street, Chitra Nagar, Kotturpuram, Chennai 600085, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kotturpuram",
+                "subdistrict": "Chitra Nagar",
+                "street": "Nagathamman Koil Street",
+                "postalCode": "600085"
+            },
+            "position": {
+                "lat": 13.02538,
+                "lng": 80.24094
+            },
+            "access": [
+                {
+                    "lat": 13.02524,
+                    "lng": 80.24095
+                }
+            ],
+            "distance": 2326,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1130827075"
+                }
+            ]
+        },
+        {
+            "title": "Masjid",
+            "id": "here:pds:place:356jx7ps-ea1550b57b4e01983d61306fa399c7ae",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjid, Vadapalani, Chennai 600026, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Vadapalani",
+                "postalCode": "600026"
+            },
+            "position": {
+                "lat": 13.04978,
+                "lng": 80.20948
+            },
+            "access": [
+                {
+                    "lat": 13.04973,
+                    "lng": 80.20946
+                }
+            ],
+            "distance": 2367,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                },
+                {
+                    "id": "600-6900-0247",
+                    "name": "Market"
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1130438925"
+                },
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1221682221"
+                }
+            ],
+            "contacts": [
+                {
+                    "phone": [
+                        {
+                            "value": "+914466528384"
+                        }
+                    ],
+                    "mobile": [
+                        {
+                            "value": "+919566026281",
+                            "categories": [
+                                {
+                                    "id": "300-3200-0034"
+                                }
+                            ]
+                        }
+                    ],
+                    "www": [
+                        {
+                            "value": "https://market99.com",
+                            "categories": [
+                                {
+                                    "id": "600-6900-0247"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "openingHours": [
+                {
+                    "categories": [
+                        {
+                            "id": "600-6900-0247"
+                        }
+                    ],
+                    "text": [
+                        "Mon-Sun: 11:00 - 22:00"
+                    ],
+                    "isOpen": false,
+                    "structured": [
+                        {
+                            "start": "T110000",
+                            "duration": "PT11H00M",
+                            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Pallivasal",
+            "id": "here:pds:place:356jx7ps-b0afba9f54c809cdebf6093397ef3c8c",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Pallivasal, Guindy National Park Area, Guindy, Chennai 600032, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Guindy",
+                "subdistrict": "Guindy National Park Area",
+                "postalCode": "600032"
+            },
+            "position": {
+                "lat": 13.01023,
+                "lng": 80.22477
+            },
+            "access": [
+                {
+                    "lat": 13.01025,
+                    "lng": 80.22493
+                }
+            ],
+            "distance": 2392,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1122285886"
+                }
+            ]
+        },
+        {
+            "title": "GMA Mosque",
+            "id": "here:pds:place:356tf340-b1119afda5bc6cdcf291c40a4b2bb4bd",
+            "language": "en",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "GMA Mosque, Lakshmanan Street, MGR Nagar, KK Nagar, Chennai 600078, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "KK Nagar",
+                "subdistrict": "MGR Nagar",
+                "street": "Lakshmanan Street",
+                "postalCode": "600078"
+            },
+            "position": {
+                "lat": 13.03572,
+                "lng": 80.19834
+            },
+            "access": [
+                {
+                    "lat": 13.03571,
+                    "lng": 80.1984
+                }
+            ],
+            "distance": 2434,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ]
+        },
+        {
+            "title": "Jumah Pallivasal",
+            "id": "here:pds:place:356jx7ps-09223bd10bce0174b127db174121ada1",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Jumah Pallivasal, 3rd Cross Street, Vijayaragavapuram, Saligramam, Chennai 600093, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Saligramam",
+                "subdistrict": "Vijayaragavapuram",
+                "street": "3rd Cross Street",
+                "postalCode": "600093"
+            },
+            "position": {
+                "lat": 13.04404,
+                "lng": 80.20133
+            },
+            "access": [
+                {
+                    "lat": 13.04417,
+                    "lng": 80.20144
+                }
+            ],
+            "distance": 2500,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1130254368"
+                }
+            ]
+        },
+        {
+            "title": "Mosque Mahood Ahmadiyya Muslim Jamaath Chennai",
+            "id": "here:pds:place:356tf343-d3a14191b5a03bca4c43480094655991",
+            "language": "en",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Mosque Mahood Ahmadiyya Muslim Jamaath Chennai, United Colony 1st Main Road, United India Colony, Kodambakkam, Chennai 600024, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kodambakkam",
+                "subdistrict": "United India Colony",
+                "street": "United Colony 1st Main Road",
+                "postalCode": "600024"
+            },
+            "position": {
+                "lat": 13.05276,
+                "lng": 80.22761
+            },
+            "access": [
+                {
+                    "lat": 13.05274,
+                    "lng": 80.22768
+                }
+            ],
+            "distance": 2511,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ]
+        },
+        {
+            "title": "Hameedia Jamia Mosque",
+            "id": "here:pds:place:356jx7ps-18255055bd8e04bb13eac30e49e53899",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Hameedia Jamia Mosque, 2nd Street, Saligramam, Chennai 600093, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Saligramam",
+                "street": "2nd Street",
+                "postalCode": "600093"
+            },
+            "position": {
+                "lat": 13.04793,
+                "lng": 80.2031
+            },
+            "access": [
+                {
+                    "lat": 13.04795,
+                    "lng": 80.20297
+                }
+            ],
+            "distance": 2628,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "998323723"
+                }
+            ]
+        },
+        {
+            "title": "Kaithumilath al Masjithul Hameetheeya & Madarasa",
+            "id": "here:pds:place:356tf343-14c46db977c9460095780b29ee9793a7",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Kaithumilath al Masjithul Hameetheeya & Madarasa, Gangaiamman Kovil Road, Kodambakkam, Chennai 600024, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kodambakkam",
+                "street": "Gangaiamman Kovil Road",
+                "postalCode": "600024"
+            },
+            "position": {
+                "lat": 13.05467,
+                "lng": 80.2162
+            },
+            "access": [
+                {
+                    "lat": 13.05468,
+                    "lng": 80.21628
+                }
+            ],
+            "distance": 2636,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1069996480"
+                }
+            ]
+        },
+        {
+            "title": "Sydanibi Masjid & Madrasa",
+            "id": "here:pds:place:356jx7ps-e14ba50d962b07077052b436da713b53",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Sydanibi Masjid & Madrasa, Railway Border Road, Kodambakkam, Chennai 600024, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kodambakkam",
+                "street": "Railway Border Road",
+                "postalCode": "600024"
+            },
+            "position": {
+                "lat": 13.05361,
+                "lng": 80.23055
+            },
+            "access": [
+                {
+                    "lat": 13.0536,
+                    "lng": 80.2306
+                }
+            ],
+            "distance": 2715,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1167375216"
+                }
+            ]
+        },
+        {
+            "title": "Kaja Hayatheya Jum Aa Palivaasal",
+            "id": "here:pds:place:356jx7ps-2b9ca072afe8028d290b707597d7e797",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Kaja Hayatheya Jum Aa Palivaasal, 6th Cross Street, Trustpuram, Kodambakkam, Chennai 600024, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Kodambakkam",
+                "subdistrict": "Trustpuram",
+                "street": "6th Cross Street",
+                "postalCode": "600024"
+            },
+            "position": {
+                "lat": 13.05692,
+                "lng": 80.22552
+            },
+            "access": [
+                {
+                    "lat": 13.05688,
+                    "lng": 80.22549
+                }
+            ],
+            "distance": 2902,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1069982849"
+                }
+            ]
+        },
+        {
+            "title": "Anjuman-E-Himayath-E-Islam",
+            "id": "here:pds:place:356d408k-6b9c685f41f10d80aac3746bb862289c",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Anjuman-E-Himayath-E-Islam, T Nagar, Chennai 600017, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "T Nagar",
+                "postalCode": "600017"
+            },
+            "position": {
+                "lat": 13.04391,
+                "lng": 80.24506
+            },
+            "access": [
+                {
+                    "lat": 13.04405,
+                    "lng": 80.24508
+                }
+            ],
+            "distance": 3021,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                },
+                {
+                    "id": "300-3200-0000",
+                    "name": "Religious Place"
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1105161634"
+                }
+            ],
+            "contacts": [
+                {
+                    "phone": [
+                        {
+                            "value": "+914449014555",
+                            "categories": [
+                                {
+                                    "id": "300-3200-0034"
+                                }
+                            ]
+                        },
+                        {
+                            "value": "+914449014578"
+                        }
+                    ],
+                    "www": [
+                        {
+                            "value": "http://anjhimayath.com",
+                            "categories": [
+                                {
+                                    "id": "300-3200-0000"
+                                }
+                            ]
+                        }
+                    ],
+                    "email": [
+                        {
+                            "value": "ed@anjhimayath.com",
+                            "categories": [
+                                {
+                                    "id": "300-3200-0000"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Masjid-E-Noor",
+            "id": "here:pds:place:356jx7ps-2a3622a385500b13a88cc673e06a6052",
+            "language": "en-GB",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Masjid-E-Noor, Mariyappa Naiyakar Street, Bharathi Nagar, Nesapakkam, Chennai 600078, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Nesapakkam",
+                "subdistrict": "Bharathi Nagar",
+                "street": "Mariyappa Naiyakar Street",
+                "postalCode": "600078"
+            },
+            "position": {
+                "lat": 13.0294,
+                "lng": 80.19231
+            },
+            "access": [
+                {
+                    "lat": 13.0295,
+                    "lng": 80.19232
+                }
+            ],
+            "distance": 3045,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1143867413"
+                }
+            ]
+        },
+        {
+            "title": "Al-Huda Jumma Masjid",
+            "id": "here:pds:place:356tf343-56433907808357aade477186c8ffdfeb",
+            "language": "en",
+            "ontologyId": "here:cm:ontology:mosque",
+            "resultType": "place",
+            "address": {
+                "label": "Al-Huda Jumma Masjid, 2nd Street, Nungambakkam, Chennai 600034, India",
+                "countryCode": "IND",
+                "countryName": "India",
+                "stateCode": "TN",
+                "state": "Tamil Nadu",
+                "county": "Chennai",
+                "city": "Chennai",
+                "district": "Nungambakkam",
+                "street": "2nd Street",
+                "postalCode": "600034"
+            },
+            "position": {
+                "lat": 13.05399,
+                "lng": 80.23814
+            },
+            "access": [
+                {
+                    "lat": 13.054,
+                    "lng": 80.238
+                }
+            ],
+            "distance": 3174,
+            "categories": [
+                {
+                    "id": "300-3200-0034",
+                    "name": "Mosque",
+                    "primary": true
+                }
+            ],
+            "references": [
+                {
+                    "supplier": {
+                        "id": "core"
+                    },
+                    "id": "1223482447"
+                }
+            ],
+            "contacts": [
+                {
+                    "phone": [
+                        {
+                            "value": "+919841184729"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
