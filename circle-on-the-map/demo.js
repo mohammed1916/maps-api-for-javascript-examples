@@ -4,10 +4,11 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function addCircleToMap(map){
+function addCircleToMap(map)
+{
   map.addObject(new H.map.Circle(
     // The central point of the circle
-    {lat:28.6071, lng:77.2127},
+    { lat: 28.6071, lng: 77.2127 },
     // The radius of the circle in meters
     1000,
     {
@@ -31,14 +32,14 @@ function addCircleToMap(map){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over New Delhi
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat:28.6071, lng:77.2127},
+  center: { lat: 28.6071, lng: 77.2127 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });

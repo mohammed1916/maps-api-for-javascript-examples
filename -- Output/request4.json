@@ -1,0 +1,51 @@
+https: //router.hereapi.com/v8/routes?apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.0082,80.23497&destination=13.01226,80.24025&alternatives=3&avoid[areas]=bbox:80.23498696,80.23906689,13.01537967,13.00930371&units=metric&return=polyline%2CtravelSummary
+{
+    "routes": [
+        {
+            "id": "38804753-885c-4cee-bf27-ba772e4a901d",
+            "sections": [
+                {
+                    "id": "a69ec172-bb4a-4d02-9c6f-8d549818dcf2",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T21:36:48+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T21:39:51+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 183,
+                        "length": 1038,
+                        "baseDuration": 183
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDo7CoQwHA0KnBkDrEsEnBwbwC8GsEjDwWvHouB0FUgtBoGgyBwHgegF3Iw5B3IonCrEkmB3IsnBvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -5,16 +5,20 @@
  * @param {H.Map} map Reference to initialized map object
  * @param {H.ui.UI} ui Reference to UI component
  */
-function capture(resultContainer, map, ui) {
+function capture(resultContainer, map, ui)
+{
   // Capturing area of the map is asynchronous, callback function receives HTML5 canvas
   // element with desired map area rendered on it.
   // We also pass an H.ui.UI reference in order to see the ScaleBar in the output.
   // If dimensions are omitted, whole veiw port will be captured
-  map.capture(function(canvas) {
-    if (canvas) {
+  map.capture(function (canvas)
+  {
+    if (canvas)
+    {
       resultContainer.innerHTML = '';
       resultContainer.appendChild(canvas);
-    } else {
+    } else
+    {
       // For example when map is in Panorama mode
       resultContainer.innerHTML = 'Capturing is not supported';
     }
@@ -27,7 +31,7 @@ function capture(resultContainer, map, ui) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
@@ -38,7 +42,7 @@ var map = new H.Map(mapContainer, defaultLayers.vector.normal.map, {
   // initial center and zoom level of the map
   zoom: 16,
   // Champs-Elysees
-  center: {lat: 48.869145, lng: 2.314298},
+  center: { lat: 48.869145, lng: 2.314298 },
   pixelRatio: window.devicePixelRatio || 1
 });
 // add a resize listener to make sure that the map occupies the whole container
@@ -71,6 +75,7 @@ containerNode.appendChild(captureBtn);
 mapContainer.appendChild(containerNode);
 
 // Step 7: Handle capture button click event
-captureBtn.onclick = function() {
+captureBtn.onclick = function ()
+{
   capture(resultContainer, map, ui);
 };

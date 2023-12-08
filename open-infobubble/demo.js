@@ -4,7 +4,8 @@
  * @param {H.geo.Point} coordinate  The location of the marker
  * @param {String} html             Data associated with the marker
  */
-function addMarkerToGroup(group, coordinate, html) {
+function addMarkerToGroup(group, coordinate, html)
+{
   var marker = new H.map.Marker(coordinate);
   // add custom data to the marker
   marker.setData(html);
@@ -16,13 +17,15 @@ function addMarkerToGroup(group, coordinate, html) {
  * Clicking on a marker opens an infobubble which holds HTML content related to the marker.
  * @param {H.Map} map A HERE Map instance within the application
  */
-function addInfoBubble(map) {
+function addInfoBubble(map)
+{
   var group = new H.map.Group();
 
   map.addObject(group);
 
   // add 'tap' event listener, that opens info bubble, to the group
-  group.addEventListener('tap', function (evt) {
+  group.addEventListener('tap', function (evt)
+  {
     // event target is the marker itself, group is a parent event target
     // for all objects that it contains
     var bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
@@ -33,11 +36,11 @@ function addInfoBubble(map) {
     ui.addBubble(bubble);
   }, false);
 
-  addMarkerToGroup(group, {lat: 53.439, lng: -2.221},
+  addMarkerToGroup(group, { lat: 53.439, lng: -2.221 },
     '<div><a href="https://www.mcfc.co.uk" target="_blank">Manchester City</a></div>' +
     '<div>City of Manchester Stadium<br />Capacity: 55,097</div>');
 
-  addMarkerToGroup(group, {lat: 53.430, lng: -2.961},
+  addMarkerToGroup(group, { lat: 53.430, lng: -2.961 },
     '<div><a href="https://www.liverpoolfc.tv" target="_blank">Liverpool</a></div>' +
     '<div>Anfield<br />Capacity: 54,074</div>');
 }
@@ -49,14 +52,14 @@ function addInfoBubble(map) {
 // initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 // initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat: 53.430, lng: -2.961},
+  center: { lat: 53.430, lng: -2.961 },
   zoom: 7,
   pixelRatio: window.devicePixelRatio || 1
 });

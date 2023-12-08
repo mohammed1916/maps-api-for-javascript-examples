@@ -5,7 +5,8 @@
  * @param  {Object.<string, H.service.MapType>} defaultLayers
  *         an object holding the three default HERE Map types
  */
-function useImperialMeasurements(map, defaultLayers){
+function useImperialMeasurements(map, defaultLayers)
+{
   // Create the default UI components
   var ui = H.ui.UI.createDefault(map, defaultLayers);
 
@@ -20,14 +21,14 @@ function useImperialMeasurements(map, defaultLayers){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Boston.
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:42.3572, lng:-71.0596},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 42.3572, lng: -71.0596 },
   zoom: 14,
   pixelRatio: window.devicePixelRatio || 1
 });

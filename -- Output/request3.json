@@ -1,0 +1,104 @@
+https: //router.hereapi.com/v8/routes?xnlp=CL_JSMv3.1.49.1&apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.0082%2C80.23497&destination=13.01226%2C80.24025&alternatives=3&avoid[areas]=bbox:80.23340715722598,13.01240321235962,80.23947533751969,13.010025479685813&units=metric&return=polyline%2CtravelSummary
+{
+    "notices": [
+        {
+            "title": "The provided parameter 'xnlp=CL_JSMv3.1.49.1' is unknown.",
+            "code": "unknownParameter",
+            "severity": "info"
+        }
+    ],
+    "routes": [
+        {
+            "id": "54b72ab3-df07-4b7b-a21c-4a8c4d6f67d2",
+            "sections": [
+                {
+                    "id": "3b410b1d-5d62-4a79-b524-ae95c492c1c5",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T20:02:19+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T20:09:20+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 421,
+                        "length": 2107,
+                        "baseDuration": 421
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDgK36B4DjDsETgrC0P0FzyBT_EjDjD_drE0KrgCghCwRkDjI4DUkckDgF8Bo0D0KsEsEU8LrJ0mCoa8B_E84Bw0B0K4D8BoBwC3IgpDjcjDrJ01CvC0jB_EwvBnpB7GzFwlB_dvCvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "88730ca6-832b-4a04-adaa-c0d4eae61f15",
+            "sections": [
+                {
+                    "id": "147e4f2a-755f-404f-8878-04dd649a62ac",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T20:02:19+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T20:09:10+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 411,
+                        "length": 2185,
+                        "baseDuration": 411
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDgK36B4DjDsETgrC0P0FzyBT_EjDjD_drE0KrgCghCwRkDjI4DUkckDgF8Bo0D0KsEsEU8LrJ0mCoa8B_E84Bw0B0K4D8BoBwC3IgpD4c4DvWw4EjDgPnBwCnBoB_JoBvC4XTwC7BkDjDoBrqCzK_dvCvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        }
+    ]
+}

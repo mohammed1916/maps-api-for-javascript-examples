@@ -1,7 +1,8 @@
 /**
  * @param  {H.Map} map A HERE Map instance within the application
  */
-function addOverlayToMap(map) {
+function addOverlayToMap(map)
+{
   var imgCounter = 0;
 
   // create an overlay that will use a weather map as a bitmap
@@ -18,7 +19,8 @@ function addOverlayToMap(map) {
   );
 
   // update overlay's bitmap every 250 milliseconds
-  setInterval(function() {
+  setInterval(function ()
+  {
     imgCounter = imgCounter < 10 ? ++imgCounter : 0;
     overlay.setBitmap(rainRadar[imgCounter]);
   }, 250);
@@ -34,14 +36,14 @@ function addOverlayToMap(map) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat: 53.1, lng: 13.1},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 53.1, lng: 13.1 },
   zoom: 3,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -55,10 +57,12 @@ var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 
 // pre-load the bitmaps
 var rainRadar = [];
-(function() {
+(function ()
+{
   var i = 0,
-      img;
-  for (; i <= 10; i++) {
+    img;
+  for (; i <= 10; i++)
+  {
     img = new Image();
     img.crossOrigin = 'anonymous';
     img.src = 'https://heremaps.github.io/maps-api-for-javascript-examples/image-overlay/data/' + i + '.png';

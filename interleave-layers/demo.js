@@ -4,14 +4,17 @@
  * and modifies colors of the map features within that listener.
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function interleave(map){
+function interleave(map)
+{
   var provider = map.getBaseLayer().getProvider();
 
   // get the style object for the base layer
   var style = provider.getStyle();
 
-  var changeListener = () => {
-    if (style.getState() === H.map.Style.State.READY) {
+  var changeListener = () =>
+  {
+    if (style.getState() === H.map.Style.State.READY)
+    {
       style.removeEventListener('change', changeListener);
 
       // create a provider and a layer that are placed under the buildings layer
@@ -33,7 +36,7 @@ function interleave(map){
       // the default object layer and its objects will remain on top of the buildings layer
       map.addObject(new H.map.Marker(map.getCenter()));
     }
-  }
+  };
 
   style.addEventListener('change', changeListener);
 }
@@ -45,18 +48,18 @@ function interleave(map){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat: 52.51477270923461, lng: 13.39846691425174},
+  center: { lat: 52.51477270923461, lng: 13.39846691425174 },
   zoom: 16,
   pixelRatio: window.devicePixelRatio || 1
 });
-map.getViewModel().setLookAtData({tilt: 45});
+map.getViewModel().setLookAtData({ tilt: 45 });
 
 // add a resize listener to make sure that the map occupies the whole container
 window.addEventListener('resize', () => map.getViewPort().resize());

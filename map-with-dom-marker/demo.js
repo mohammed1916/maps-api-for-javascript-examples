@@ -5,9 +5,10 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function addDomMarker(map) {
+function addDomMarker(map)
+{
   var outerElement = document.createElement('div'),
-      innerElement = document.createElement('div');
+    innerElement = document.createElement('div');
 
   outerElement.style.userSelect = 'none';
   outerElement.style.webkitUserSelect = 'none';
@@ -19,7 +20,7 @@ function addDomMarker(map) {
   innerElement.style.backgroundColor = 'blue';
   innerElement.style.border = '2px solid black';
   innerElement.style.font = 'normal 12px arial';
-  innerElement.style.lineHeight = '12px'
+  innerElement.style.lineHeight = '12px';
 
   innerElement.style.paddingTop = '2px';
   innerElement.style.paddingLeft = '4px';
@@ -36,30 +37,34 @@ function addDomMarker(map) {
   // Add text to the DOM element
   innerElement.innerHTML = 'C';
 
-  function changeOpacity(evt) {
+  function changeOpacity(evt)
+  {
     evt.target.style.opacity = 0.6;
   };
 
-  function changeOpacityToOne(evt) {
+  function changeOpacityToOne(evt)
+  {
     evt.target.style.opacity = 1;
   };
 
   //create dom icon and add/remove opacity listeners
   var domIcon = new H.map.DomIcon(outerElement, {
     // the function is called every time marker enters the viewport
-    onAttach: function(clonedElement, domIcon, domMarker) {
+    onAttach: function (clonedElement, domIcon, domMarker)
+    {
       clonedElement.addEventListener('mouseover', changeOpacity);
       clonedElement.addEventListener('mouseout', changeOpacityToOne);
     },
     // the function is called every time marker leaves the viewport
-    onDetach: function(clonedElement, domIcon, domMarker) {
+    onDetach: function (clonedElement, domIcon, domMarker)
+    {
       clonedElement.removeEventListener('mouseover', changeOpacity);
       clonedElement.removeEventListener('mouseout', changeOpacityToOne);
     }
   });
 
   // Marker for Chicago Bears home
-  var bearsMarker = new H.map.DomMarker({lat: 41.8625, lng: -87.6166}, {
+  var bearsMarker = new H.map.DomMarker({ lat: 41.8625, lng: -87.6166 }, {
     icon: domIcon
   });
   map.addObject(bearsMarker);
@@ -72,14 +77,14 @@ function addDomMarker(map) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Chicago.
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:41.881944, lng:-87.627778},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 41.881944, lng: -87.627778 },
   zoom: 11,
   pixelRatio: window.devicePixelRatio || 1
 });

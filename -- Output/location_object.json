@@ -1,0 +1,171 @@
+[
+    {
+        "title": "Anna University",
+        "id": "here:pds:place:356jx7ps-a217085168e40594a050e679e28c2cd0",
+        "resultType": "place",
+        "address": {
+            "label": "Anna University, Anna University Campus, Guindy, Chennai 600025, India",
+            "countryCode": "IND",
+            "countryName": "India",
+            "stateCode": "TN",
+            "state": "Tamil Nadu",
+            "county": "Chennai",
+            "city": "Chennai",
+            "district": "Guindy",
+            "subdistrict": "Anna University Campus",
+            "postalCode": "600025"
+        },
+        "position": {
+            "lat": 13.0082,
+            "lng": 80.23497
+        },
+        "access": [
+            {
+                "lat": 13.00835,
+                "lng": 80.23499
+            }
+        ],
+        "categories": [
+            {
+                "id": "800-8200-0173",
+                "name": "Higher Education",
+                "primary": true
+            }
+        ],
+        "scoring": {
+            "queryScore": 1,
+            "fieldScore": {
+                "city": 1,
+                "placeName": 1
+            }
+        }
+    },
+    {
+        "title": "Anna University",
+        "id": "here:pds:place:356q9wpy-d2d3e1d77d7b07bdf6bf31e7b8261101",
+        "resultType": "place",
+        "address": {
+            "label": "Anna University, Sardar Patel Road, Anna University Campus, Guindy, Chennai 600025, India",
+            "countryCode": "IND",
+            "countryName": "India",
+            "stateCode": "TN",
+            "state": "Tamil Nadu",
+            "county": "Chennai",
+            "city": "Chennai",
+            "district": "Guindy",
+            "subdistrict": "Anna University Campus",
+            "street": "Sardar Patel Road",
+            "postalCode": "600025"
+        },
+        "position": {
+            "lat": 13.00829,
+            "lng": 80.23347
+        },
+        "access": [
+            {
+                "lat": 13.00825,
+                "lng": 80.23346
+            }
+        ],
+        "categories": [
+            {
+                "id": "400-4100-0042",
+                "name": "Bus Stop",
+                "primary": true
+            }
+        ],
+        "scoring": {
+            "queryScore": 1,
+            "fieldScore": {
+                "city": 1,
+                "placeName": 1
+            }
+        }
+    },
+    {
+        "title": "Anna University",
+        "id": "here:pds:place:356tf341-88c22c98c7be44ac978cfccd2e135201",
+        "resultType": "place",
+        "address": {
+            "label": "Anna University, Anna University Campus, Guindy, Chennai 600025, India",
+            "countryCode": "IND",
+            "countryName": "India",
+            "stateCode": "TN",
+            "state": "Tamil Nadu",
+            "county": "Chennai",
+            "city": "Chennai",
+            "district": "Guindy",
+            "subdistrict": "Anna University Campus",
+            "postalCode": "600025"
+        },
+        "position": {
+            "lat": 13.01095,
+            "lng": 80.23535
+        },
+        "access": [
+            {
+                "lat": 13.00908,
+                "lng": 80.23409
+            }
+        ],
+        "categories": [
+            {
+                "id": "800-8200-0173",
+                "name": "Higher Education",
+                "primary": true
+            },
+            {
+                "id": "700-7250-0136",
+                "name": "Business Facility"
+            }
+        ],
+        "scoring": {
+            "queryScore": 1,
+            "fieldScore": {
+                "city": 1,
+                "placeName": 1
+            }
+        }
+    },
+    {
+        "title": "ANNA UNIVERSITY-ENTRANCE 1",
+        "id": "here:pds:place:356jx7ps-19ef178416760eaed431fde7aa95f481",
+        "resultType": "place",
+        "address": {
+            "label": "ANNA UNIVERSITY-ENTRANCE 1, Anna University Campus, Guindy, Chennai 600025, India",
+            "countryCode": "IND",
+            "countryName": "India",
+            "stateCode": "TN",
+            "state": "Tamil Nadu",
+            "county": "Chennai",
+            "city": "Chennai",
+            "district": "Guindy",
+            "subdistrict": "Anna University Campus",
+            "postalCode": "600025"
+        },
+        "position": {
+            "lat": 13.01226,
+            "lng": 80.24025
+        },
+        "access": [
+            {
+                "lat": 13.01216,
+                "lng": 80.24027
+            }
+        ],
+        "categories": [
+            {
+                "id": "800-8200-0173",
+                "name": "Higher Education",
+                "primary": true
+            }
+        ],
+        "scoring": {
+            "queryScore": 1,
+            "fieldScore": {
+                "city": 1,
+                "placeName": 1
+            }
+        }
+    }
+]

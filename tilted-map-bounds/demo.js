@@ -3,13 +3,14 @@
  * @param  {H.Map} secondMap  A HERE Map instance within the application
  */
 
-function displayBounds(firstMap, secondMap) {
+function displayBounds(firstMap, secondMap)
+{
   // get view model objects for both maps, view model contains all data and
   // utility functions that're related to map's geo state
   var viewModel1 = firstMap.getViewModel(),
-      viewModel2 = secondMap.getViewModel(),
-      polygon,
-      marker;
+    viewModel2 = secondMap.getViewModel(),
+    polygon,
+    marker;
 
   // create a polygon that will represent the visible area of the main map
   polygon = new H.map.Polygon(viewModel1.getLookAtData().bounds, {
@@ -21,10 +22,11 @@ function displayBounds(firstMap, secondMap) {
   });
   // add both objects to the map
   staticMap.addObject(polygon);
-  staticMap.addObject(marker)
+  staticMap.addObject(marker);
 
   // set up view change listener on the interactive map
-  firstMap.addEventListener('mapviewchange', function() {
+  firstMap.addEventListener('mapviewchange', function ()
+  {
     // on every view change take a "snapshot" of a current geo data for
     // interactive map and set the zoom and position on the non-interactive map
     var data = viewModel1.getLookAtData();
@@ -47,7 +49,7 @@ function displayBounds(firstMap, secondMap) {
 // initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 // create two sets of the default layers for each map instance
 var defaultLayers = platform.createDefaultLayers();
@@ -69,8 +71,8 @@ document.getElementById('panel').appendChild(staticMapContainer);
 
 // initialize a map, this map is interactive
 var map = new H.Map(mapContainer,
-  defaultLayers.vector.normal.map,{
-  center: {lat: 52.5206970, lng: 13.40927320},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 52.5206970, lng: 13.40927320 },
   zoom: 16,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -85,8 +87,8 @@ map.getViewModel().setLookAtData({
 
 // initialize a map that will be synchronised
 var staticMap = new H.Map(staticMapContainer,
-  defaultLayersSync.vector.normal.map,{
-  center: {lat: 53.430, lng: -2.961},
+  defaultLayersSync.vector.normal.map, {
+  center: { lat: 53.430, lng: -2.961 },
   zoom: 7,
   pixelRatio: window.devicePixelRatio || 1
 });

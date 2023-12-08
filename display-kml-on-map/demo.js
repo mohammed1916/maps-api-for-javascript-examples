@@ -6,19 +6,24 @@
  *
  * @param {H.Map} map A HERE Map instance within the application
  */
-function renderKML(map) {
+function renderKML(map)
+{
   // Create a reader object passing in the URL of our KML file
   reader = new H.data.kml.Reader('https://heremaps.github.io/maps-api-for-javascript-examples/display-kml-on-map/data/us-states.kml');
-  reader.addEventListener("statechange", function(evt){
-    if (evt.state === H.data.AbstractReader.State.READY) {
+  reader.addEventListener("statechange", function (evt)
+  {
+    if (evt.state === H.data.AbstractReader.State.READY)
+    {
       // Get KML layer from the reader object and add it to the map
       map.addLayer(reader.getLayer());
-      reader.getLayer().getProvider().addEventListener("tap", (evt) => {
-        logEvent(evt.target.getData().name)
+      reader.getLayer().getProvider().addEventListener("tap", (evt) =>
+      {
+        logEvent(evt.target.getData().name);
       });
     }
-    if (evt.state === H.data.AbstractReader.State.ERROR) {
-      logEvent('KML parsing error')
+    if (evt.state === H.data.AbstractReader.State.ERROR)
+    {
+      logEvent('KML parsing error');
     }
   });
 
@@ -33,14 +38,14 @@ function renderKML(map) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 // Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'), defaultLayers.vector.normal.map, {
   zoom: 2.5,
-  center: {lat: 48.30432303555956, lng: -104.94466241321628},
+  center: { lat: 48.30432303555956, lng: -104.94466241321628 },
   pixelRatio: window.devicePixelRatio || 1
 });
 // add a resize listener to make sure that the map occupies the whole container
@@ -56,12 +61,13 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 // Step 5: create custom logging facilities
 var logContainer = document.createElement('ul');
-logContainer.className ='log';
+logContainer.className = 'log';
 logContainer.innerHTML = '<li class="log-entry">Try clicking on the map</li>';
 map.getElement().appendChild(logContainer);
 
 // Helper for logging events
-function logEvent(str) {
+function logEvent(str)
+{
   var entry = document.createElement('li');
   entry.className = 'log-entry';
   entry.textContent = str;

@@ -1,25 +1,28 @@
 
-function orderMarkers() {
+function orderMarkers()
+{
   var zIndex = 1,
-      // create a set of markers
-      marker = new H.map.Marker(
-        {lat: 52.508249, lng: 13.338931}
-      ),
-      marker2 = new H.map.Marker(
-        {lat: 52.506682, lng: 13.332107}
-      ),
-      marker3 = new H.map.Marker(
-        {lat: 52.503730, lng: 13.331678}
-      ),
-      marker4 = new H.map.Marker(
-        {lat: 52.531, lng: 13.380}
-      );
+    // create a set of markers
+    marker = new H.map.Marker(
+      { lat: 52.508249, lng: 13.338931 }
+    ),
+    marker2 = new H.map.Marker(
+      { lat: 52.506682, lng: 13.332107 }
+    ),
+    marker3 = new H.map.Marker(
+      { lat: 52.503730, lng: 13.331678 }
+    ),
+    marker4 = new H.map.Marker(
+      { lat: 52.531, lng: 13.380 }
+    );
 
   // add markers to the map
   map.addObjects([marker, marker2, marker3, marker4]);
 
-  map.addEventListener('tap', function (evt) {
-    if (evt.target instanceof H.map.Marker) {
+  map.addEventListener('tap', function (evt)
+  {
+    if (evt.target instanceof H.map.Marker)
+    {
       // increase z-index of the marker that was tapped
       evt.target.setZIndex(zIndex++);
     }
@@ -33,13 +36,13 @@ function orderMarkers() {
 // initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat: 52.5, lng: 13.4},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 52.5, lng: 13.4 },
   zoom: 10,
   pixelRatio: window.devicePixelRatio || 1
 });

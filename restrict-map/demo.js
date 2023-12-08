@@ -4,22 +4,29 @@
  * @param {H.Map} map   A HERE Map instance within the application
  *
  */
-function restrictMap(map){
+function restrictMap(map)
+{
 
   var bounds = new H.geo.Rect(37.829, -122.426, 37.824, -122.42);
 
-  map.getViewModel().addEventListener('sync', function() {
+  map.getViewModel().addEventListener('sync', function ()
+  {
     var center = map.getCenter();
 
-    if (!bounds.containsPoint(center)) {
-      if (center.lat > bounds.getTop()) {
+    if (!bounds.containsPoint(center))
+    {
+      if (center.lat > bounds.getTop())
+      {
         center.lat = bounds.getTop();
-      } else if (center.lat < bounds.getBottom()) {
+      } else if (center.lat < bounds.getBottom())
+      {
         center.lat = bounds.getBottom();
       }
-      if (center.lng < bounds.getLeft()) {
+      if (center.lng < bounds.getLeft())
+      {
         center.lng = bounds.getLeft();
-      } else if (center.lng > bounds.getRight()) {
+      } else if (center.lng > bounds.getRight())
+      {
         center.lng = bounds.getRight();
       }
       map.setCenter(center);
@@ -29,11 +36,11 @@ function restrictMap(map){
   //Debug code to visualize where your restriction is
   map.addObject(new H.map.Rect(bounds, {
     style: {
-        fillColor: 'rgba(55, 85, 170, 0.1)',
-        strokeColor: 'rgba(55, 85, 170, 0.6)',
-        lineWidth: 8
-      }
+      fillColor: 'rgba(55, 85, 170, 0.1)',
+      strokeColor: 'rgba(55, 85, 170, 0.6)',
+      lineWidth: 8
     }
+  }
   ));
 }
 
@@ -44,14 +51,14 @@ function restrictMap(map){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Alcatraz Island
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:37.82667, lng:-122.423333},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 37.82667, lng: -122.423333 },
   zoom: 16,
   pixelRatio: window.devicePixelRatio || 1
 });

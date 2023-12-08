@@ -1,0 +1,143 @@
+https: //router.hereapi.com/v8/routes?apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.0082,80.23497&destination=13.01226,80.24025&alternatives=3&avoid[areas]=bbox:80.23269916,80.23923979,13.01500743,13.00961042&units=metric&return=polyline%2CtravelSummary`
+{
+    "routes": [
+        {
+            "id": "233b139b-d026-492c-8c27-892c351ce807",
+            "sections": [
+                {
+                    "id": "35663ad1-8b07-458a-85b7-9a71c78a5c81",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T21:42:16+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T21:45:19+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 183,
+                        "length": 1038,
+                        "baseDuration": 183
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDo7CoQwHA0KnBkDrEsEnBwbwC8GsEjDwWvHouB0FUgtBoGgyBwHgegF3Iw5B3IonCrEkmB3IsnBvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "347338be-c2dd-48b0-b53d-65fcb1fe8991",
+            "sections": [
+                {
+                    "id": "6b9ecd32-bf18-42ef-99ca-97fffaeba91f",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T21:42:16+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T21:46:10+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 234,
+                        "length": 1275,
+                        "baseDuration": 234
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDo7CoQwHA0KnBkDrEsEnBwbwC8GsEjDwWvHouB0FUgtBoGgyBwHgegFk_BsJrJ01CvC0jB_EwvBnpB7G7arE3IsnBvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "b13f823b-8f44-4c79-be01-85e1a7cfeac2",
+            "sections": [
+                {
+                    "id": "fe9c04c8-88bc-4e67-b90e-64a9e9bf65a6",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T21:42:16+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T21:46:12+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 236,
+                        "length": 1251,
+                        "baseDuration": 236
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDo7CoQwHA0KnBkDrEsEnBwbwC8GsEjDwWvHouB0FUgtBoGgyBwHgegF3Iw5BoV4D8Q0FoLwH8G4IoG8LvC0jB_EwvBnpB7G7arE3IsnBvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -2,7 +2,8 @@
 /**
  * @param  {H.Map} map A HERE Map instance within the application
  */
-function setStyle(map){
+function setStyle(map)
+{
   // get the vector provider from the base layer
   var provider = map.getBaseLayer().getProvider();
   // Create the style object from the YAML configuration.
@@ -23,14 +24,14 @@ function setStyle(map){
 // In your own code, replace variable window.apikey with your own apikey
 
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat: 52.51477270923461, lng: 13.39846691425174},
+  center: { lat: 52.51477270923461, lng: 13.39846691425174 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });

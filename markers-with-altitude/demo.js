@@ -3,15 +3,16 @@
  * Calculate the bicycle route.
  * @param   {H.service.Platform} platform    A stub class to access HERE services
  */
-function calculateRouteFromAtoB (platform) {
+function calculateRouteFromAtoB(platform)
+{
   var router = platform.getRoutingService(null, 8),
-      routeRequestParams = {
-        routingMode: 'fast',
-        transportMode: 'bicycle',
-        origin: '-16.1647142,-67.7229166',
-        destination: '-16.3705847,-68.0452683',
-        return: 'polyline,elevation' // explicitly request altitude data
-      };
+    routeRequestParams = {
+      routingMode: 'fast',
+      transportMode: 'bicycle',
+      origin: '-16.1647142,-67.7229166',
+      destination: '-16.3705847,-68.0452683',
+      return: 'polyline,elevation' // explicitly request altitude data
+    };
 
   router.calculateRoute(
     routeRequestParams,
@@ -24,17 +25,20 @@ function calculateRouteFromAtoB (platform) {
  * Process the routing response and visualise the descent with the help of the
  * H.map.Marker
  */
-function onSuccess(result) {
+function onSuccess(result)
+{
   var route = result.routes[0];
-  route.sections.forEach((section) => {
+  route.sections.forEach((section) =>
+  {
     let lineString = H.geo.LineString.fromFlexiblePolyline(section.polyline),
-        group = new H.map.Group(),
-        dict = {},
-        polyline;
+      group = new H.map.Group(),
+      dict = {},
+      polyline;
 
     let coords = lineString.getLatLngAltArray();
 
-    for (let i = 2, len = coords.length; i < len; i += 3) {
+    for (let i = 2, len = coords.length; i < len; i += 3)
+    {
       let elevation = coords[i];
 
       // normalize the altitude values for the color range
@@ -44,14 +48,16 @@ function onSuccess(result) {
 
       // create or re-use icon
       var icon;
-      if (dict[r + '_' + b]) {
+      if (dict[r + '_' + b])
+      {
         icon = dict[r + '_' + b];
-      } else {
+      } else
+      {
         var canvas = document.createElement('canvas');
         canvas.width = 4;
         canvas.height = 4;
 
-        var ctx = canvas.getContext('2d'); 
+        var ctx = canvas.getContext('2d');
         ctx.fillStyle = 'rgb(' + r + ', 0, ' + b + ')';
         ctx.fillRect(0, 0, 4, 4);
         icon = new H.map.Icon(canvas);
@@ -62,7 +68,7 @@ function onSuccess(result) {
       // the marker is placed at the provided altitude
       var marker = new H.map.Marker({
         lat: coords[i - 2], lng: coords[i - 1], alt: elevation
-      }, {icon: icon});
+      }, { icon: icon });
       group.addObject(marker);
     }
 
@@ -88,7 +94,8 @@ function onSuccess(result) {
  * This function will be called if a communication error occurs during the JSON-P request
  * @param  {Object} error  The error message received.
  */
-function onError(error) {
+function onError(error)
+{
   alert('Can\'t reach the remote server');
 }
 
@@ -103,15 +110,15 @@ var mapContainer = document.getElementById('map'),
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Berlin
 var map = new H.Map(mapContainer,
-  defaultLayers.vector.normal.map,{
-  center: {lat:52.5160, lng:13.3779},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 52.5160, lng: 13.3779 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -130,4 +137,4 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 
 // Now use the map as required...
-calculateRouteFromAtoB (platform);
+calculateRouteFromAtoB(platform);

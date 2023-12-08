@@ -1,0 +1,9 @@
+https: //router.hereapi.com/v8/routes?xnlp=CL_JSMv3.1.49.1&apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.0082%2C80.23497&destination=13.01226%2C80.24025&alternatives=3&avoid%5Bareas%5D=%5Bobject%20Object%5D&units=metric&return=polyline%2CtravelSummary
+{
+    "title": "Malformed request",
+    "status": 400,
+    "code": "E605001",
+    "cause": "Error while parsing request:\n  Invalid value for parameter 'avoid[areas]' at '%5Bobject%20Object%5D'\n  Invalid avoid areas at '[object Object]'\n  Invalid avoid area at '[object Object]'\n  Invalid corridor at '[object Object]'",
+    "action": "",
+    "correlationId": "2158eae8-bade-4d3a-96a5-b7933608b192"
+}

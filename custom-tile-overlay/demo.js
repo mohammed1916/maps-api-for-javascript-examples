@@ -4,7 +4,8 @@
  *
  * @param {H.Map} map A HERE Map instance within the application
  */
-function overlayHistoricalBerlin(map) {
+function overlayHistoricalBerlin(map)
+{
   // Create a tile provider from our images of historical Berlin
   var tileProvider = new H.map.provider.ImageTileProvider({
     // We have tiles only for zoom levels 12â€“15,
@@ -12,18 +13,21 @@ function overlayHistoricalBerlin(map) {
     min: 12,
     max: 15,
     opacity: 0.5,
-    getURL: function (column, row, zoom) {
+    getURL: function (column, row, zoom)
+    {
       // If Berlin is not displayed, return a blank tile.
       if (((zoom == 12) && (row != 1343 || column != 2200)) ||
-        ((zoom == 13) &&  (row < 2686 || column < 4400 || row > 2687 || column > 4401)) ||
+        ((zoom == 13) && (row < 2686 || column < 4400 || row > 2687 || column > 4401)) ||
         ((zoom == 14) && (row < 5372 || column < 8800 || row > 5375 || column > 8803)) ||
-        ((zoom  == 15) && (row < 10744 || column < 17601 || row > 10750 || column > 17607))) {
+        ((zoom == 15) && (row < 10744 || column < 17601 || row > 10750 || column > 17607)))
+      {
         return 'https://heremaps.github.io/maps-api-for-javascript-examples/custom-tile-overlay/tiles/blank.png';
-      } else {
+      } else
+      {
         // The Old Berlin Map Tiler follows the TMS URL specification.
         // By specification, tiles should be accessible in the following format:
         // http://server_address/zoom_level/x/y.png
-        return 'https://heremaps.github.io/maps-api-for-javascript-examples/custom-tile-overlay/tiles/'+ zoom+ '/'+ row + '/'+ column+ '.png';
+        return 'https://heremaps.github.io/maps-api-for-javascript-examples/custom-tile-overlay/tiles/' + zoom + '/' + row + '/' + column + '.png';
       }
     }
   });
@@ -31,7 +35,8 @@ function overlayHistoricalBerlin(map) {
   // you need to comply with the licensing agreement of the map tile provider.
   // Often this means giving attribution or copyright acknowledgment to the owner,
   // even if the tiles are offered free of charge.
-  tileProvider.getCopyrights = function (bounds, level) {
+  tileProvider.getCopyrights = function (bounds, level)
+  {
     // We should return an array of objects that implement H.map.ICopyright interface
     return [{
       label: "Overlay derived from <a href='http://commons.wikimedia.org/wiki/File%3AMap_de_berlin_1789_%28georeferenced%29.jpg' target='_blank'>WikiMedia Commons</a>",
@@ -54,7 +59,7 @@ function overlayHistoricalBerlin(map) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 

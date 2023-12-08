@@ -1,0 +1,12 @@
+
+https: //router.hereapi.com/v8/routes?apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.02063,80.18525&destination=13.04072,80.17747&alternatives=6&avoid[areas]=bbox:80.21609524,80.22216870,13.03092424,13.02485420&units=metric&return=polyline%2CtravelSummary
+{
+    "notices": [
+        {
+            "title": "Route calculation failed: Couldn't find a route.",
+            "code": "noRouteFound",
+            "severity": "critical"
+        }
+    ],
+    "routes": []
+}

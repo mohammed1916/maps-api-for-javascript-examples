@@ -19,12 +19,14 @@ const venueId = '27158';
  *
  * @param  {H.Map} map A HERE Map instance
  */
-function addVenueToMap(map) {
+function addVenueToMap(map)
+{
   // Get an instance of the Indoor Maps service using a valid apikey for Indoor Maps
   const venuesService = platform.getVenuesService({ apikey: yourApikey, hrn: indoorMapHrn }, 2);
 
   // Indoor Maps service provides a loadVenue method
-  venuesService.loadVenue(venueId).then((venue) => {
+  venuesService.loadVenue(venueId).then((venue) =>
+  {
     // add Indoor Maps data to the Indoor Maps provider
     venuesProvider.addVenue(venue);
     venuesProvider.setActiveVenue(venue);
@@ -59,7 +61,7 @@ function addVenueToMap(map) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
@@ -93,8 +95,9 @@ addVenueToMap(map);
  * @param {H.Map} map A HERE Map instance within the application
  * @param {number} angle in degrees
  */
-function rotateMap(map, angle) {
-  map.getViewModel().setLookAtData({ 
+function rotateMap(map, angle)
+{
+  map.getViewModel().setLookAtData({
     tilt: 0,
     heading: angle
   });
@@ -105,22 +108,29 @@ function rotateMap(map, angle) {
  *
  * @param {H.Map} map A HERE Map instance within the application
  */
- function restrictMap(map, venue) {
+function restrictMap(map, venue)
+{
 
   var bounds = venue.getBoundingBox(); // to get BBox for the indoor map
 
-  map.getViewModel().addEventListener('sync', function() {
+  map.getViewModel().addEventListener('sync', function ()
+  {
     var center = map.getCenter();
 
-    if (!bounds.containsPoint(center)) {
-      if (center.lat > bounds.getTop()) {
+    if (!bounds.containsPoint(center))
+    {
+      if (center.lat > bounds.getTop())
+      {
         center.lat = bounds.getTop();
-      } else if (center.lat < bounds.getBottom()) {
+      } else if (center.lat < bounds.getBottom())
+      {
         center.lat = bounds.getBottom();
       }
-      if (center.lng < bounds.getLeft()) {
+      if (center.lng < bounds.getLeft())
+      {
         center.lng = bounds.getLeft();
-      } else if (center.lng > bounds.getRight()) {
+      } else if (center.lng > bounds.getRight())
+      {
         center.lng = bounds.getRight();
       }
       map.setCenter(center);
@@ -130,10 +140,10 @@ function rotateMap(map, angle) {
   //Debug code to visualize where your restriction is
   map.addObject(new H.map.Rect(bounds, {
     style: {
-        fillColor: 'rgba(55, 85, 170, 0.1)',
-        strokeColor: 'rgba(55, 85, 170, 0.3)',
-        lineWidth: 2
-      }
+      fillColor: 'rgba(55, 85, 170, 0.1)',
+      strokeColor: 'rgba(55, 85, 170, 0.3)',
+      lineWidth: 2
     }
+  }
   ));
 }

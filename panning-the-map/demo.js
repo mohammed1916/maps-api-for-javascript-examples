@@ -3,30 +3,34 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function panTheMap(map) {
+function panTheMap(map)
+{
   var viewPort,
-      incX = 1,
-      incY = 2,
-      x = 100,
-      y = 100;
+    incX = 1,
+    incY = 2,
+    x = 100,
+    y = 100;
 
   // Obtain the view port object of the map to manipulate its screen coordinates
   var viewPort = map.getViewPort(),
-      // function calculates new screen coordinates and calls
-      // viewport's interaction method with them
-      pan = function() {
-        x = x + incX;
-        if (Math.abs(x) > 100) {
-          incX = -incX;
-        }
+    // function calculates new screen coordinates and calls
+    // viewport's interaction method with them
+    pan = function ()
+    {
+      x = x + incX;
+      if (Math.abs(x) > 100)
+      {
+        incX = -incX;
+      }
 
-        y = y + incY;
-        if (Math.abs(y) > 100) {
-          incY = -incY;
-        }
+      y = y + incY;
+      if (Math.abs(y) > 100)
+      {
+        incY = -incY;
+      }
 
-        viewPort.interaction(x, y);
-      };
+      viewPort.interaction(x, y);
+    };
 
   // set interaction modifier that provides information which map properties
   // change with each "interact" call
@@ -42,14 +46,14 @@ function panTheMap(map) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 // Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat: 19.11, lng: 72.89},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 19.11, lng: 72.89 },
   zoom: 4,
   pixelRatio: window.devicePixelRatio || 1
 });

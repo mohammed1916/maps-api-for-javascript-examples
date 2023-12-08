@@ -3,7 +3,8 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function addRectangleToMap(map) {
+function addRectangleToMap(map)
+{
   var boundingBox = new H.geo.Rect(53.1, 13.1, 43.1, 40.1);
   map.addObject(
     new H.map.Rect(boundingBox, {
@@ -23,14 +24,14 @@ function addRectangleToMap(map) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat: 53.1, lng: 13.1},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 53.1, lng: 13.1 },
   zoom: 3,
   pixelRatio: window.devicePixelRatio || 1
 });

@@ -3,8 +3,9 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function moveMapToBerlin(map){
-  map.setCenter({lat:52.5159, lng:13.3777});
+function moveMapToBerlin(map)
+{
+  map.setCenter({ lat: 52.5159, lng: 13.3777 });
   map.setZoom(14);
 }
 
@@ -15,14 +16,14 @@ function moveMapToBerlin(map){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:50, lng:5},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 50, lng: 5 },
   zoom: 4,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -38,6 +39,7 @@ var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 // Now use the map as required...
-window.onload = function () {
+window.onload = function ()
+{
   moveMapToBerlin(map);
-}
+};

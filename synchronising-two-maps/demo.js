@@ -5,14 +5,16 @@
  *  @param  {H.Map} secondMap  A HERE Map instance within the application
  */
 
-function synchronizeMaps(firstMap, secondMap) {
+function synchronizeMaps(firstMap, secondMap)
+{
   // get view model objects for both maps, view model contains all data and
   // utility functions that're related to map's geo state
   var viewModel1 = firstMap.getViewModel(),
-      viewModel2 = secondMap.getViewModel();
+    viewModel2 = secondMap.getViewModel();
 
   // set up view change listener on interactive map
-  firstMap.addEventListener('mapviewchange', function() {
+  firstMap.addEventListener('mapviewchange', function ()
+  {
     // on every view change take a "snapshot" of a current geo data for
     // interactive map and set this values to the second, non-interactive, map
     viewModel2.setLookAtData(viewModel1.getLookAtData());
@@ -26,7 +28,7 @@ function synchronizeMaps(firstMap, secondMap) {
 // initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 // create two sets of the default layers for each map instance
 var defaultLayers = platform.createDefaultLayers();
@@ -48,8 +50,8 @@ document.getElementById('panel').appendChild(staticMapContainer);
 
 // initialize a map, this map is interactive
 var map = new H.Map(mapContainer,
-  defaultLayers.vector.normal.map,{
-  center: {lat: 53.430, lng: -2.961},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 53.430, lng: -2.961 },
   zoom: 7,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -58,8 +60,8 @@ window.addEventListener('resize', () => map.getViewPort().resize());
 
 // initialize a map that will be synchronised
 var staticMap = new H.Map(staticMapContainer,
-  defaultLayersSync.vector.normal.map,{
-  center: {lat: 53.430, lng: -2.961},
+  defaultLayersSync.vector.normal.map, {
+  center: { lat: 53.430, lng: -2.961 },
   zoom: 7,
   pixelRatio: window.devicePixelRatio || 1
 });

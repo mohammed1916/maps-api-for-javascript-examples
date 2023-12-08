@@ -21,12 +21,14 @@ var infoBubble;
  *
  * @param  {H.Map} map A HERE Map instance
  */
-function addVenueToMap(map) {
+function addVenueToMap(map)
+{
   // Get an instance of the Indoor Maps service using a valid apikey for Indoor Maps
   const venuesService = platform.getVenuesService({ apikey: yourApikey, hrn: indoorMapHrn }, 2);
 
   // Indoor Maps service provides a loadVenue method
-  venuesService.loadVenue(venueId).then((venue) => {
+  venuesService.loadVenue(venueId).then((venue) =>
+  {
     // add Indoor Maps data to the Indoor Maps provider
     venuesProvider.addVenue(venue);
     venuesProvider.setActiveVenue(venue);
@@ -61,7 +63,7 @@ function addVenueToMap(map) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
@@ -96,7 +98,8 @@ addVenueToMap(map);
  * @param {H.venues.Provider} venuesProvider
  * @param {string} geometryForSearch The identifier of the geometry to be searched
  */
- function highlightGeometries (venue, geometryForSearch) {
+function highlightGeometries(venue, geometryForSearch)
+{
   const searchGeometries = venue.search(geometryForSearch);
   const highlightStyle = {
     fillColor: '#FFBF00',
@@ -104,7 +107,8 @@ addVenueToMap(map);
     outlineWidth: 0.2,
   };
 
-  if (searchGeometries.length > 0) {
+  if (searchGeometries.length > 0)
+  {
     venuesProvider.activeVenue.setHighlightedGeometries(true, searchGeometries, highlightStyle);
   }
 }
@@ -114,13 +118,17 @@ addVenueToMap(map);
  * @param {H.geo.Point} position The position where to show the InfoBubble
  * @param {H.venues.Geometry} geometry The instance of Geometry to be highlighted
  */
-const onGeometryTap = (position, geometry) => {
+const onGeometryTap = (position, geometry) =>
+{
   const popUpContent = (geometry) => `${geometry.getIdentifier()}: ${geometry.getName()} <br>`;
 
-  if (!infoBubble) {
+  if (!infoBubble)
+  {
     infoBubble = new H.ui.InfoBubble(position, {
-      onStateChange: (evt) => {
-        if (evt.target.getState() === 'closed') {
+      onStateChange: (evt) =>
+      {
+        if (evt.target.getState() === 'closed')
+        {
           // On closing the popup, remove highlight from the geometry
           venuesProvider.getActiveVenue().setHighlightedGeometries(false, [evt.target.getData()]);
         }
@@ -139,7 +147,7 @@ const onGeometryTap = (position, geometry) => {
   infoBubble.setPosition(position);
 
   // Update its content
-  infoBubble.getContentElement().innerHTML = popUpContent(geometry)
+  infoBubble.getContentElement().innerHTML = popUpContent(geometry);
 
   // Set a new geometry in the data payload of the InfoBubble
   infoBubble.setData(geometry);
@@ -154,10 +162,13 @@ const onGeometryTap = (position, geometry) => {
 /**
  * This function demonstrates how to add an event listener to the venue
  */
-const enableBubbleOnTap = () => {
-  venuesProvider.addEventListener('tap', (e) => {
+const enableBubbleOnTap = () =>
+{
+  venuesProvider.addEventListener('tap', (e) =>
+  {
     const geometry = e.target;
-    if (geometry) {
+    if (geometry)
+    {
       const position = map.screenToGeo(e.currentPointer.viewportX, e.currentPointer.viewportY);
       setTimeout(() => onGeometryTap(position, geometry), 0);
     }

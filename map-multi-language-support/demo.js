@@ -5,7 +5,8 @@
  * @param  {H.Map} map      A HERE Map instance within the application
  * @pama   {H.service.Platform} platform    A stub class to access HERE services
  */
-function switchMapLanguage(map, platform){
+function switchMapLanguage(map, platform)
+{
   // Create default layers
   let defaultLayers = platform.createDefaultLayers({
     lg: 'zh'
@@ -33,7 +34,7 @@ function switchMapLanguage(map, platform){
 
 //Step 1: initialize communication with the platform
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var pixelRatio = window.devicePixelRatio || 1;
 var defaultLayers = platform.createDefaultLayers({
@@ -43,8 +44,8 @@ var defaultLayers = platform.createDefaultLayers({
 
 //Step 2: initialize a map - this map is centered over Hong Kong.
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:22.2783, lng:114.1588},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 22.2783, lng: 114.1588 },
   zoom: 12,
   pixelRatio: pixelRatio
 });

@@ -3,8 +3,9 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function setMapViewBounds(map){
-  var bbox = new H.geo.Rect(42.3736,-71.0751,42.3472,-71.0408);
+function setMapViewBounds(map)
+{
+  var bbox = new H.geo.Rect(42.3736, -71.0751, 42.3472, -71.0408);
   map.getViewModel().setLookAtData({
     bounds: bbox
   });
@@ -17,14 +18,14 @@ function setMapViewBounds(map){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:50, lng:5},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 50, lng: 5 },
   zoom: 4,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -40,6 +41,7 @@ var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 // Now use the map as required...
-window.onload = function () {
+window.onload = function ()
+{
   setMapViewBounds(map);
-}
+};

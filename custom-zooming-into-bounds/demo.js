@@ -4,33 +4,34 @@
  *
  * @param {H.Map} map A HERE Map instance within the application
  */
-function setUpCustomZooming(map) {
+function setUpCustomZooming(map)
+{
   // create several circles to denote cities' population
   var clevelandCircle = new H.map.Circle(
     new H.geo.Point(41.4822, -81.6697), //center
     11703, // Radius proportional to 390,113 population
-    {style: {fillColor: 'rgba(0, 255, 221, 0.66)'}}
+    { style: { fillColor: 'rgba(0, 255, 221, 0.66)' } }
   );
   var torontoCircle = new H.map.Circle(
     new H.geo.Point(43.7000, -79.4000), //center
     75090, // Radius proportional to 2.503 million population
-    {style: {fillColor: 'rgba(0, 255, 221, 0.66)'}}
+    { style: { fillColor: 'rgba(0, 255, 221, 0.66)' } }
   );
   var chicagoCircle = new H.map.Circle(
     new H.geo.Point(41.8369, -87.6847), //center
     81570, // Radius proportional to 2.719 million population
-    {style: {fillColor: 'rgba(0, 221, 255, 0.66)'}}
+    { style: { fillColor: 'rgba(0, 221, 255, 0.66)' } }
   );
   var newYorkCircle = new H.map.Circle(
     new H.geo.Point(40.7127, -74.0059), //center
     252180, // Radius proportional to 8.406 million population
-    {style: {fillColor: 'rgba(221, 0, 255, 0.66)'}}
+    { style: { fillColor: 'rgba(221, 0, 255, 0.66)' } }
   );
   // define maximum zoom level for each circle
-  clevelandCircle.setData({maxZoom: 7});
-  torontoCircle.setData({maxZoom: 5});
-  chicagoCircle.setData({maxZoom: 5});
-  newYorkCircle.setData({maxZoom: 4});
+  clevelandCircle.setData({ maxZoom: 7 });
+  torontoCircle.setData({ maxZoom: 5 });
+  chicagoCircle.setData({ maxZoom: 5 });
+  newYorkCircle.setData({ maxZoom: 4 });
 
   // create container for objects
   var container = new H.map.Group({
@@ -38,7 +39,8 @@ function setUpCustomZooming(map) {
   });
 
   // use the event delegation to handle 'tap' events on objects
-  container.addEventListener('tap', function (evt) {
+  container.addEventListener('tap', function (evt)
+  {
     var target = evt.target;
     // retrieve maximum zoom level
     var maxZoom = target.getData().maxZoom;
@@ -61,7 +63,7 @@ function setUpCustomZooming(map) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 

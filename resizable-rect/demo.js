@@ -4,24 +4,29 @@
  * @param {H.Map} map                      A HERE Map instance within the application
  * @param {H.mapevents.Behavior} behavior  Behavior implements default interactions with map
  */
-function createResizableRect(map, behavior) {
-  var rect =  new H.map.Rect(
-        new H.geo.Rect(51.2, 20.5, 49.5, 24.5),
-        {
-          style: {fillColor: 'rgba(100, 100, 100, 0.5)', lineWidth: 0}
-        }
-      ),
-      rectOutline = new H.map.Polyline(
-        rect.getGeometry().getExterior(),
-        {
-          style: {lineWidth: 8, strokeColor: 'rgba(255, 0, 0, 0)', fillColor: 'rgba(0, 0, 0, 0)', lineCap: 'square'}
-        }
-      ),
-      rectGroup = new H.map.Group({
-        volatility: true, // mark the group as volatile for smooth dragging of all it's objects
-        objects: [rect, rectOutline]
-      }),
-      rectTimeout;
+function createResizableRect(map, behavior)
+{
+  var rect = new H.map.Rect(
+    new H.geo.Rect(
+      13.01378488503507,
+      80.23368260925976,
+      13.00940761197399,
+      80.23942748389136),
+    {
+      style: { fillColor: 'rgba(100, 100, 100, 0.5)', lineWidth: 0 }
+    }
+  ),
+    rectOutline = new H.map.Polyline(
+      rect.getGeometry().getExterior(),
+      {
+        style: { lineWidth: 8, strokeColor: 'rgba(255, 0, 0, 0)', fillColor: 'rgba(0, 0, 0, 0)', lineCap: 'square' }
+      }
+    ),
+    rectGroup = new H.map.Group({
+      volatility: true, // mark the group as volatile for smooth dragging of all it's objects
+      objects: [rect, rectOutline]
+    }),
+    rectTimeout;
 
   // ensure that the objects can receive drag events
   rect.draggable = true;
@@ -35,13 +40,15 @@ function createResizableRect(map, behavior) {
   map.addObject(rectGroup);
 
   // event listener for rectangle group to show outline (polyline) if moved in with mouse (or touched on touch devices)
-  rectGroup.addEventListener('pointerenter', function(evt) {
+  rectGroup.addEventListener('pointerenter', function (evt)
+  {
     var currentStyle = rectOutline.getStyle(),
-        newStyle = currentStyle.getCopy({
-          strokeColor: 'rgb(255, 0, 0)'
-        });
+      newStyle = currentStyle.getCopy({
+        strokeColor: 'rgb(255, 0, 0)'
+      });
 
-    if (rectTimeout) {
+    if (rectTimeout)
+    {
       clearTimeout(rectTimeout);
       rectTimeout = null;
     }
@@ -51,106 +58,128 @@ function createResizableRect(map, behavior) {
 
   // event listener for rectangle group to hide outline if moved out with mouse (or released finger on touch devices)
   // the outline is hidden on touch devices after specific timeout
-  rectGroup.addEventListener('pointerleave', function(evt) {
+  rectGroup.addEventListener('pointerleave', function (evt)
+  {
     var currentStyle = rectOutline.getStyle(),
-        newStyle = currentStyle.getCopy({
-          strokeColor: 'rgba(255, 0, 0, 0)'
-        }),
-        timeout = (evt.currentPointer.type == 'touch') ? 1000 : 0;
+      newStyle = currentStyle.getCopy({
+        strokeColor: 'rgba(255, 0, 0, 0)'
+      }),
+      timeout = (evt.currentPointer.type == 'touch') ? 1000 : 0;
 
-      rectTimeout = setTimeout(function() {
-        rectOutline.setStyle(newStyle);
-      }, timeout);
+    rectTimeout = setTimeout(function ()
+    {
+      rectOutline.setStyle(newStyle);
+    }, timeout);
 
 
     document.body.style.cursor = 'default';
   }, true);
 
   // event listener for rectangle group to change the cursor if mouse position is over the outline polyline (resizing is allowed)
-  rectGroup.addEventListener('pointermove', function(evt) {
+  rectGroup.addEventListener('pointermove', function (evt)
+  {
     var pointer = evt.currentPointer,
-        objectTopLeftScreen = map.geoToScreen(evt.target.getGeometry().getBoundingBox().getTopLeft()),
-        objectBottomRightScreen = map.geoToScreen(evt.target.getGeometry().getBoundingBox().getBottomRight()),
-        draggingType = '';
+      objectTopLeftScreen = map.geoToScreen(evt.target.getGeometry().getBoundingBox().getTopLeft()),
+      objectBottomRightScreen = map.geoToScreen(evt.target.getGeometry().getBoundingBox().getBottomRight()),
+      draggingType = '';
 
     // only set cursor and draggingType if target is outline polyline
-    if (evt.target != rectOutline) {
+    if (evt.target != rectOutline)
+    {
       return;
     }
 
     // change document cursor depending on the mouse position
-    if (pointer.viewportX < (objectTopLeftScreen.x + 4)) {
+    if (pointer.viewportX < (objectTopLeftScreen.x + 4))
+    {
       document.body.style.cursor = 'ew-resize'; // mouse position is at left side
       draggingType = 'left';
-    } else if (pointer.viewportX > (objectBottomRightScreen.x - 4)) {
+    } else if (pointer.viewportX > (objectBottomRightScreen.x - 4))
+    {
       document.body.style.cursor = 'ew-resize'; // mouse position is at right side
       draggingType = 'right';
-    } else if (pointer.viewportY < (objectTopLeftScreen.y + 4)) {
+    } else if (pointer.viewportY < (objectTopLeftScreen.y + 4))
+    {
       document.body.style.cursor = 'ns-resize'; // mouse position is at top side
       draggingType = 'top';
-    } else if (pointer.viewportY > (objectBottomRightScreen.y - 4)) {
+    } else if (pointer.viewportY > (objectBottomRightScreen.y - 4))
+    {
       document.body.style.cursor = 'ns-resize'; // mouse position is at the bottom side
       draggingType = 'bottom';
-    } else {
-      document.body.style.cursor = 'default'
+    } else
+    {
+      document.body.style.cursor = 'default';
     }
 
-    if (draggingType == 'left') {
-      if (pointer.viewportY < (objectTopLeftScreen.y + 4)) {
+    if (draggingType == 'left')
+    {
+      if (pointer.viewportY < (objectTopLeftScreen.y + 4))
+      {
         document.body.style.cursor = 'nwse-resize'; // mouse position is at the top-left corner
         draggingType = 'left-top';
-      } else if (pointer.viewportY > (objectBottomRightScreen.y - 4)) {
+      } else if (pointer.viewportY > (objectBottomRightScreen.y - 4))
+      {
         document.body.style.cursor = 'nesw-resize'; // mouse position is at the bottom-left corner
         draggingType = 'left-bottom';
       }
-    }  else if (draggingType == 'right') {
-      if (pointer.viewportY < (objectTopLeftScreen.y + 4)) {
+    } else if (draggingType == 'right')
+    {
+      if (pointer.viewportY < (objectTopLeftScreen.y + 4))
+      {
         document.body.style.cursor = 'nesw-resize'; // mouse position is at the top-right corner
         draggingType = 'right-top';
-      } else if (pointer.viewportY > (objectBottomRightScreen.y - 4)) {
+      } else if (pointer.viewportY > (objectBottomRightScreen.y - 4))
+      {
         document.body.style.cursor = 'nwse-resize'; // mouse position is at the bottom-right corner
         draggingType = 'right-bottom';
       }
     }
 
-    rectGroup.setData({'draggingType': draggingType});
+    rectGroup.setData({ 'draggingType': draggingType });
   }, true);
 
   // disable the map's behavior if resizing started so map doesn't pan in the situation
   // when we try to set rect size to 0 or negative and mouse cursor leaves the map object
-  rectGroup.addEventListener('dragstart', function(evt) {
-    if (evt.target === rectOutline) {
+  rectGroup.addEventListener('dragstart', function (evt)
+  {
+    if (evt.target === rectOutline)
+    {
       behavior.disable();
     }
   }, true);
 
   // event listener for rect group to resize the geo rect object if dragging over outline polyline
-  rectGroup.addEventListener('drag', function(evt) {
+  rectGroup.addEventListener('drag', function (evt)
+  {
     var pointer = evt.currentPointer,
-        pointerGeoPoint = map.screenToGeo(pointer.viewportX, pointer.viewportY);
-        currentGeoRect = rect.getGeometry().getBoundingBox(),
-        objectTopLeftScreen = map.geoToScreen(currentGeoRect.getTopLeft()),
-        objectBottomRightScreen = map.geoToScreen(currentGeoRect.getBottomRight());
+      pointerGeoPoint = map.screenToGeo(pointer.viewportX, pointer.viewportY);
+    currentGeoRect = rect.getGeometry().getBoundingBox(),
+      objectTopLeftScreen = map.geoToScreen(currentGeoRect.getTopLeft()),
+      objectBottomRightScreen = map.geoToScreen(currentGeoRect.getBottomRight());
 
     // if pointer is over outline, resize the geo rect object
-    if (evt.target instanceof H.map.Polyline) {
+    if (evt.target instanceof H.map.Polyline)
+    {
       var currentTopLeft = currentGeoRect.getTopLeft(),
-          currentBottomRight = currentGeoRect.getBottomRight(),
-          newGeoRect,
-          outlineLinestring;
+        currentBottomRight = currentGeoRect.getBottomRight(),
+        newGeoRect,
+        outlineLinestring;
 
       // update rect's size depending on dragging type:
-      switch(rectGroup.getData()['draggingType']) {
+      switch (rectGroup.getData()['draggingType'])
+      {
         case 'left-top':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lng >= currentBottomRight.lng || pointerGeoPoint.lat <= currentBottomRight.lat) {
+          if (pointerGeoPoint.lng >= currentBottomRight.lng || pointerGeoPoint.lat <= currentBottomRight.lat)
+          {
             return;
           }
           newGeoRect = H.geo.Rect.fromPoints(pointerGeoPoint, currentGeoRect.getBottomRight());
           break;
         case 'left-bottom':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lng >= currentBottomRight.lng || pointerGeoPoint.lat >= currentTopLeft.lat) {
+          if (pointerGeoPoint.lng >= currentBottomRight.lng || pointerGeoPoint.lat >= currentTopLeft.lat)
+          {
             return;
           }
           currentTopLeft.lng = pointerGeoPoint.lng;
@@ -159,7 +188,8 @@ function createResizableRect(map, behavior) {
           break;
         case 'right-top':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lng <= currentTopLeft.lng || pointerGeoPoint.lat <= currentBottomRight.lat) {
+          if (pointerGeoPoint.lng <= currentTopLeft.lng || pointerGeoPoint.lat <= currentBottomRight.lat)
+          {
             return;
           }
           currentTopLeft.lat = pointerGeoPoint.lat;
@@ -168,14 +198,16 @@ function createResizableRect(map, behavior) {
           break;
         case 'right-bottom':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lng <= currentTopLeft.lng || pointerGeoPoint.lat >= currentTopLeft.lat) {
+          if (pointerGeoPoint.lng <= currentTopLeft.lng || pointerGeoPoint.lat >= currentTopLeft.lat)
+          {
             return;
           }
           newGeoRect = H.geo.Rect.fromPoints(currentGeoRect.getTopLeft(), pointerGeoPoint);
           break;
         case 'left':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lng >= currentBottomRight.lng) {
+          if (pointerGeoPoint.lng >= currentBottomRight.lng)
+          {
             return;
           }
           currentTopLeft.lng = pointerGeoPoint.lng;
@@ -183,7 +215,8 @@ function createResizableRect(map, behavior) {
           break;
         case 'right':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lng <= currentTopLeft.lng) {
+          if (pointerGeoPoint.lng <= currentTopLeft.lng)
+          {
             return;
           }
           currentBottomRight.lng = pointerGeoPoint.lng;
@@ -191,7 +224,8 @@ function createResizableRect(map, behavior) {
           break;
         case 'top':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lat <= currentBottomRight.lat) {
+          if (pointerGeoPoint.lat <= currentBottomRight.lat)
+          {
             return;
           }
           currentTopLeft.lat = pointerGeoPoint.lat;
@@ -199,7 +233,8 @@ function createResizableRect(map, behavior) {
           break;
         case 'bottom':
           // we don't allow resizing to 0 or to negative values
-          if (pointerGeoPoint.lat >= currentTopLeft.lat) {
+          if (pointerGeoPoint.lat >= currentTopLeft.lat)
+          {
             return;
           }
           currentBottomRight.lat = pointerGeoPoint.lat;
@@ -221,7 +256,8 @@ function createResizableRect(map, behavior) {
   }, true);
 
   // event listener for rect group to enable map's behavior
-  rectGroup.addEventListener('dragend', function(evt) {
+  rectGroup.addEventListener('dragend', function (evt)
+  {
     // enable behavior
     behavior.enable();
   }, true);
@@ -234,14 +270,14 @@ function createResizableRect(map, behavior) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Boston
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat: 50, lng: 22.8},
+  center: { lat: 50, lng: 22.8 },
   zoom: 6,
   pixelRatio: window.devicePixelRatio || 1
 });

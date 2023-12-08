@@ -1,17 +1,19 @@
-    /**
- * Make clustering of markers with a custom theme
- *
- * Note that the maps clustering module https://js.api.here.com/v3/3.1/mapsjs-clustering.js
- * must be loaded to use the Clustering
- *
- * @param {H.Map} map A HERE Map instance within the application
- * @param {H.ui.UI} ui Default ui component
- * @param {Function} getBubbleContent Function returning detailed information about photo
- * @param {Object[]} data Raw data containing information about each photo
- */
-function startClustering(map, ui, getBubbleContent, data) {
+/**
+* Make clustering of markers with a custom theme
+*
+* Note that the maps clustering module https://js.api.here.com/v3/3.1/mapsjs-clustering.js
+* must be loaded to use the Clustering
+*
+* @param {H.Map} map A HERE Map instance within the application
+* @param {H.ui.UI} ui Default ui component
+* @param {Function} getBubbleContent Function returning detailed information about photo
+* @param {Object[]} data Raw data containing information about each photo
+*/
+function startClustering(map, ui, getBubbleContent, data)
+{
   // First we need to create an array of DataPoint objects for the ClusterProvider
-  var dataPoints = data.map(function(item) {
+  var dataPoints = data.map(function (item)
+  {
     // Note that we pass "null" as value for the "altitude"
     // Last argument is a reference to the original data to associate with our DataPoint
     // We will need it later on when handling events on the clusters/noise points for showing
@@ -44,7 +46,8 @@ function startClustering(map, ui, getBubbleContent, data) {
 // Custom clustering theme description object.
 // Object should implement H.clustering.ITheme interface
 var CUSTOM_THEME = {
-  getClusterPresentation: function(cluster) {
+  getClusterPresentation: function (cluster)
+  {
     // Get random DataPoint from our cluster
     var randomDataPoint = getRandomDataPoint(cluster),
       // Get a reference to data object that DataPoint holds
@@ -53,8 +56,8 @@ var CUSTOM_THEME = {
     // Create a marker from a random point in the cluster
     var clusterMarker = new H.map.Marker(cluster.getPosition(), {
       icon: new H.map.Icon(data.thumbnail, {
-        size: {w: 50, h: 50},
-        anchor: {x: 25, y: 25}
+        size: { w: 50, h: 50 },
+        anchor: { x: 25, y: 25 }
       }),
 
       // Set min/max zoom with values from the cluster,
@@ -69,7 +72,8 @@ var CUSTOM_THEME = {
 
     return clusterMarker;
   },
-  getNoisePresentation: function (noisePoint) {
+  getNoisePresentation: function (noisePoint)
+  {
     // Get a reference to data object our noise points
     var data = noisePoint.getData(),
       // Create a marker for the noisePoint
@@ -78,8 +82,8 @@ var CUSTOM_THEME = {
         // to show it correctly at certain zoom levels:
         min: noisePoint.getMinZoom(),
         icon: new H.map.Icon(data.thumbnail, {
-          size: {w: 20, h: 20},
-          anchor: {x: 10, y: 10}
+          size: { w: 20, h: 20 },
+          anchor: { x: 10, y: 10 }
         })
       });
 
@@ -96,7 +100,8 @@ var CUSTOM_THEME = {
  * Boilerplate map initialization code starts below:
  */
 // Helper function for getting a random point from a cluster object
-function getRandomDataPoint(cluster) {
+function getRandomDataPoint(cluster)
+{
   var dataPoints = [];
 
   // Iterate through all points which fall into the cluster and store references to them
@@ -112,7 +117,8 @@ function getRandomDataPoint(cluster) {
  * a cluster (group of photos)
  * @param {H.mapevents.Event} e The event object
  */
-function onMarkerClick(e) {
+function onMarkerClick(e)
+{
   // Get position of the "clicked" marker
   var position = e.target.getGeometry(),
     // Get the data associated with that marker
@@ -122,14 +128,16 @@ function onMarkerClick(e) {
     bubble = onMarkerClick.bubble;
 
   // For all markers create only one bubble, if not created yet
-  if (!bubble) {
+  if (!bubble)
+  {
     bubble = new H.ui.InfoBubble(position, {
       content: bubbleContent
     });
     ui.addBubble(bubble);
     // Cache the bubble object
     onMarkerClick.bubble = bubble;
-  } else {
+  } else
+  {
     // Reuse existing bubble object
     bubble.setPosition(position);
     bubble.setContent(bubbleContent);
@@ -143,7 +151,7 @@ function onMarkerClick(e) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
@@ -168,26 +176,27 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
  * Merges given data with default bubble template and returns resulting HTML string
  * @param {Object} data Data holding single picture information
  */
-function getBubbleContent(data) {
+function getBubbleContent(data)
+{
   return [
     '<div class="bubble">',
-      '<a class="bubble-image" ',
-        'style="background-image: url(', data.fullurl, ')" ',
-        'href="', data.url, '" target="_blank">',
-      '</a>',
-      '<span>',
-        // Author info may be missing
-        data.author ? ['Photo by: ', '<a href="//commons.wikimedia.org/wiki/User:',
-          encodeURIComponent(data.author), '" target="_blank">',
-          data.author, '</a>'].join(''):'',
-        '<hr/>',
-        '<a class="bubble-footer" href="//commons.wikimedia.org/" target="_blank">',
-          '<img class="bubble-logo" src="data/wikimedia-logo.png" width="20" height="20" />',
-          '<span class="bubble-desc">',
-          'Photos provided by Wikimedia Commons are <br/>under the copyright of their owners.',
-          '</span>',
-        '</a>',
-      '</span>',
+    '<a class="bubble-image" ',
+    'style="background-image: url(', data.fullurl, ')" ',
+    'href="', data.url, '" target="_blank">',
+    '</a>',
+    '<span>',
+    // Author info may be missing
+    data.author ? ['Photo by: ', '<a href="//commons.wikimedia.org/wiki/User:',
+      encodeURIComponent(data.author), '" target="_blank">',
+      data.author, '</a>'].join('') : '',
+    '<hr/>',
+    '<a class="bubble-footer" href="//commons.wikimedia.org/" target="_blank">',
+    '<img class="bubble-logo" src="data/wikimedia-logo.png" width="20" height="20" />',
+    '<span class="bubble-desc">',
+    'Photos provided by Wikimedia Commons are <br/>under the copyright of their owners.',
+    '</span>',
+    '</a>',
+    '</span>',
     '</div>'
   ].join('');
 }

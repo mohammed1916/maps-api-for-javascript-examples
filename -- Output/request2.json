@@ -1,0 +1,111 @@
+https: //router.hereapi.com/v8/routes?xnlp=CL_JSMv3.1.49.1&apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.0082%2C80.23497&destination=13.01226%2C80.24025&alternatives=3&avoid=%5Bobject%20Object%5D&units=metric&return=polyline%2CtravelSummary
+
+https: //router.hereapi.com/v8/routes?xnlp=CL_JSMv3.1.49.1&apikey=pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q&transportMode=car&origin=13.0082%2C80.23497&destination=13.01226%2C80.24025&alternatives=3&avoid[areas]=bbox:80.23340715722598,13.01240321235962,80.23947533751969,13.010025479685813&units=metric&return=polyline%2CtravelSummary
+{
+    "notices": [
+        {
+            "title": "The provided parameter 'xnlp=CL_JSMv3.1.49.1' is unknown.",
+            "code": "unknownParameter",
+            "severity": "info"
+        },
+        {
+            "title": "The provided parameter 'avoid=%5Bobject%20Object%5D' is unknown.",
+            "code": "unknownParameter",
+            "severity": "info"
+        }
+    ],
+    "routes": [
+        {
+            "id": "44d80bf1-4e05-445e-94ac-b93a563facf3",
+            "sections": [
+                {
+                    "id": "8dd8edb2-de2e-4fa8-94ce-1c94977c02d6",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T19:55:13+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T19:58:16+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 183,
+                        "length": 1038,
+                        "baseDuration": 183
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDo7CoQwHA0KnBkDrEsEnBwbwC8GsEjDwWvHouB0FUgtBoGgyBwHgegF3Iw5B3IonCrEkmB3IsnBvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "0be16fb1-c470-4b72-b3b4-8f9fdc05aa5d",
+            "sections": [
+                {
+                    "id": "464d28de-5dc6-4da4-bb1b-9e58618ed877",
+                    "type": "vehicle",
+                    "departure": {
+                        "time": "2023-12-07T19:55:13+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.00822,
+                                "lng": 80.23495
+                            },
+                            "originalLocation": {
+                                "lat": 13.0082,
+                                "lng": 80.23497
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "time": "2023-12-07T19:58:45+05:30",
+                        "place": {
+                            "type": "place",
+                            "location": {
+                                "lat": 13.01216,
+                                "lng": 80.24023
+                            },
+                            "originalLocation": {
+                                "lat": 13.0122599,
+                                "lng": 80.24025
+                            }
+                        }
+                    },
+                    "travelSummary": {
+                        "duration": 212,
+                        "length": 1210,
+                        "baseDuration": 212
+                    },
+                    "polyline": "BG41-5Ys8kh5EkIkDgK36B4DjDsETgrC0P8f0F4hB4IouBgK4hB0FwRkDjIo4BjD8a3DgegegF3Iw5B3IonCrEkmB3IsnBvCoQ",
+                    "transport": {
+                        "mode": "car"
+                    }
+                }
+            ]
+        }
+    ]
+}

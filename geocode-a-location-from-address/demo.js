@@ -8,11 +8,12 @@
  *
  * @param   {H.service.Platform} platform    A stub class to access HERE services
  */
-function geocode(platform) {
+function geocode(platform)
+{
   var geocoder = platform.getSearchService(),
-      geocodingParameters = {
-        q: '200 S Mathilda Sunnyvale CA'
-      };
+    geocodingParameters = {
+      q: '200 S Mathilda Sunnyvale CA'
+    };
 
   geocoder.geocode(
     geocodingParameters,
@@ -25,13 +26,14 @@ function geocode(platform) {
  * @param  {Object} result A JSON object representing the location(s) found.
  * See: https://www.here.com/docs/bundle/geocoding-and-search-api-v7-api-reference/page/index.html#/paths/~1geocode/get
  */
-function onSuccess(result) {
+function onSuccess(result)
+{
   var locations = result.items;
- /*
-  * The styling of the geocoding response on the map is entirely under the developer's control.
-  * A representitive styling can be found the full JS + HTML code of this example
-  * in the functions below:
-  */
+  /*
+   * The styling of the geocoding response on the map is entirely under the developer's control.
+   * A representitive styling can be found the full JS + HTML code of this example
+   * in the functions below:
+   */
   addLocationsToMap(locations);
   addLocationsToPanel(locations);
   // ... etc.
@@ -41,7 +43,8 @@ function onSuccess(result) {
  * This function will be called if a communication error occurs during the JSON-P request
  * @param  {Object} error  The error message received.
  */
-function onError(error) {
+function onError(error)
+{
   alert('Can\'t reach the remote server');
 }
 
@@ -52,14 +55,14 @@ function onError(error) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over California
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:37.376, lng:-122.034},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 37.376, lng: -122.034 },
   zoom: 15,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -84,13 +87,16 @@ var bubble;
  * @param  {H.geo.Point} position     The location on the map.
  * @param  {String} text              The contents of the infobubble.
  */
-function openBubble(position, text){
- if(!bubble){
-    bubble =  new H.ui.InfoBubble(
+function openBubble(position, text)
+{
+  if (!bubble)
+  {
+    bubble = new H.ui.InfoBubble(
       position,
-      {content: text});
+      { content: text });
     ui.addBubble(bubble);
-  } else {
+  } else
+  {
     bubble.setPosition(position);
     bubble.setContent(text);
     bubble.open();
@@ -102,39 +108,41 @@ function openBubble(position, text){
  * @param {Object[]} locations An array of locations as received from the
  *                             H.service.GeocodingService
  */
-function addLocationsToPanel(locations){
+function addLocationsToPanel(locations)
+{
 
   var nodeOL = document.createElement('ul'),
-      i;
+    i;
 
   nodeOL.style.fontSize = 'small';
-  nodeOL.style.marginLeft ='5%';
-  nodeOL.style.marginRight ='5%';
+  nodeOL.style.marginLeft = '5%';
+  nodeOL.style.marginRight = '5%';
 
 
-   for (i = 0;  i < locations.length; i += 1) {
-     let location = locations[i];
-     var li = document.createElement('li'),
-          divLabel = document.createElement('div'),
-          address = location.address,
-          content =  '<strong style="font-size: large;">' + address.label  + '</strong></br>';
-          position = location.position;
+  for (i = 0; i < locations.length; i += 1)
+  {
+    let location = locations[i];
+    var li = document.createElement('li'),
+      divLabel = document.createElement('div'),
+      address = location.address,
+      content = '<strong style="font-size: large;">' + address.label + '</strong></br>';
+    position = location.position;
 
-      content += '<strong>houseNumber:</strong> ' + address.houseNumber + '<br/>';
-      content += '<strong>street:</strong> '  + address.street + '<br/>';
-      content += '<strong>district:</strong> '  + address.district + '<br/>';
-      content += '<strong>city:</strong> ' + address.city + '<br/>';
-      content += '<strong>postalCode:</strong> ' + address.postalCode + '<br/>';
-      content += '<strong>county:</strong> ' + address.county + '<br/>';
-      content += '<strong>country:</strong> ' + address.countryName + '<br/>';
-      content += '<strong>position:</strong> ' +
-        Math.abs(position.lat.toFixed(4)) + ((position.lat > 0) ? 'N' : 'S') +
-        ' ' + Math.abs(position.lng.toFixed(4)) + ((position.lng > 0) ? 'E' : 'W') + '<br/>';
+    content += '<strong>houseNumber:</strong> ' + address.houseNumber + '<br/>';
+    content += '<strong>street:</strong> ' + address.street + '<br/>';
+    content += '<strong>district:</strong> ' + address.district + '<br/>';
+    content += '<strong>city:</strong> ' + address.city + '<br/>';
+    content += '<strong>postalCode:</strong> ' + address.postalCode + '<br/>';
+    content += '<strong>county:</strong> ' + address.county + '<br/>';
+    content += '<strong>country:</strong> ' + address.countryName + '<br/>';
+    content += '<strong>position:</strong> ' +
+      Math.abs(position.lat.toFixed(4)) + ((position.lat > 0) ? 'N' : 'S') +
+      ' ' + Math.abs(position.lng.toFixed(4)) + ((position.lng > 0) ? 'E' : 'W') + '<br/>';
 
-      divLabel.innerHTML = content;
-      li.appendChild(divLabel);
+    divLabel.innerHTML = content;
+    li.appendChild(divLabel);
 
-      nodeOL.appendChild(li);
+    nodeOL.appendChild(li);
   }
 
   locationsContainer.appendChild(nodeOL);
@@ -146,23 +154,26 @@ function addLocationsToPanel(locations){
  * @param {Object[]} locations An array of locations as received from the
  *                             H.service.GeocodingService
  */
-function addLocationsToMap(locations){
-  var group = new  H.map.Group(),
-      position,
-      i;
+function addLocationsToMap(locations)
+{
+  var group = new H.map.Group(),
+    position,
+    i;
 
   // Add a marker for each location found
-  for (i = 0;  i < locations.length; i += 1) {
+  for (i = 0; i < locations.length; i += 1)
+  {
     let location = locations[i];
     marker = new H.map.Marker(location.position);
     marker.label = location.address.label;
     group.addObject(marker);
   }
 
-  group.addEventListener('tap', function (evt) {
+  group.addEventListener('tap', function (evt)
+  {
     map.setCenter(evt.target.getGeometry());
     openBubble(
-       evt.target.getGeometry(), evt.target.label);
+      evt.target.getGeometry(), evt.target.label);
   }, false);
 
   // Add the locations group to the map

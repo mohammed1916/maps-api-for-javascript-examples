@@ -7,10 +7,12 @@
  * @param {H.Map} map A HERE Map instance within the application
  * @param {Object[]} data Raw data that contains airports' coordinates
 */
-function startClustering(map, data) {
+function startClustering(map, data)
+{
   // First we need to create an array of DataPoint objects,
   // for the ClusterProvider
-  var dataPoints = data.map(function (item) {
+  var dataPoints = data.map(function (item)
+  {
     return new H.clustering.DataPoint(item.latitude, item.longitude);
   });
 
@@ -39,7 +41,7 @@ function startClustering(map, data) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 
 var defaultLayers = platform.createDefaultLayers();

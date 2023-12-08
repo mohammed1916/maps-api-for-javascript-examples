@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-  <title>Search for a Location based on an Address</title>
+  <title>RouteOpt</title>
   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
   <link rel="stylesheet" type="text/css" href="demo.css" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -17,23 +17,39 @@
 </head>
 
 <body id="geocode">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA3wae6ZSj7TSk1H93kvysUp8bTGetdBh4",
+      authDomain: "geospatialroute.firebaseapp.com",
+      projectId: "geospatialroute",
+      storageBucket: "geospatialroute.appspot.com",
+      messagingSenderId: "506176163790",
+      appId: "1:506176163790:web:6ca33f6ace74a48ee4259f",
+      measurementId: "G-DL11YZXFDJ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <div class="page-header">
-    <h1>Search for a Location based on an Address</h1>
-    <p>Request a location using a free-form text input and display it on the map.</p>
+    <h1>Geospacial APP: RouteOpt</h1>
+    <p>Request an optimal route from source to destination with avoidance roads.</p>
   </div>
-  <p>This example makes a geocoding request and retrieves the latitude, longitude and
-    complete address details of <b>200 S Mathilda Ave, Sunnyvale, CA</b> based on a free-form
-    text input. A clickable marker is placed on the location found.</p>
   <div id="map"></div>
   <div id="panel"></div>
-  <h3>Code</h3>
-  <p>Access to the geocoding service is obtained from the <code>H.service.Platform</code>
-    by calling <code>getSearchService()</code>. The <code>geocode()</code> method is used
-    to find a location by passing in the relevant <code>q</code> parameter as defined in
-    <a href="https://www.here.com/docs/bundle/geocoding-and-search-api-v7-api-reference/page/index.html#/paths/~1geocode/get"
-      target="_blank">Geocoding and Search API v7</a>.
-    The styling and display of the response is under the control of the developer.
-  </p>
+  <!-- Copyright notice -->
+  <div class="copyright">
+    &copy; Mohammed Abdullah 2023. All rights reserved.
+  </div>
   <script type="text/javascript" src='demo.js'></script>
 </body>
 

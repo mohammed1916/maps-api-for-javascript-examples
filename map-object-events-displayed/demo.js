@@ -4,7 +4,8 @@
  * @param {H.Map} map A HERE Map instance within the application
  * @param {Function} logEvent Custom function for logging events
  */
-function testObjectsEvents(map, logEvent) {
+function testObjectsEvents(map, logEvent)
+{
   // Let's create the same style for all objects
   var style = {
     fillColor: 'rgba(35, 51, 129, 0.3)',
@@ -15,13 +16,13 @@ function testObjectsEvents(map, logEvent) {
   // Create a rectangle map object
   var rect = new H.map.Rect(new H.geo.Rect(
     51.5072, 0, 48.8567, 2.3508
-  ), {style: style});
+  ), { style: style });
 
   // Create a circle map object
   var circle = new H.map.Circle(
     new H.geo.Point(52.3667, 4.9000), //center
     198000, // Radius in meters
-    {style: style}
+    { style: style }
   );
 
   // Create a polyline map object
@@ -29,14 +30,14 @@ function testObjectsEvents(map, logEvent) {
     52.5167, 13.3833, 0,
     50.0833, 14.4167, 0,
     52.2333, 21.0167, 0
-  ]), {style: style});
+  ]), { style: style });
 
   // Create a polygon map object
   var polygon = new H.map.Polygon(new H.geo.LineString([
     45.4667, 9.1833, 0,
     48.1333, 11.566, 0,
     50.0800, 8.2400, 0,
-  ]), {style: style});
+  ]), { style: style });
 
   // Create a standard marker
   var standardMarker = new H.map.Marker(new H.geo.Point(48.2000, 16.3667));
@@ -86,7 +87,7 @@ function testObjectsEvents(map, logEvent) {
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
@@ -110,15 +111,16 @@ var ui = H.ui.UI.createDefault(map, defaultLayers, 'en-US');
 
 // Step 5: create custom logging facilities
 var logContainer = document.createElement('ul');
-logContainer.className ='log';
+logContainer.className = 'log';
 logContainer.innerHTML = '<li class="log-entry">Try clicking on elements</li>';
 map.getElement().appendChild(logContainer);
 
 // Helper for logging events
-function logEvent(evt) {
+function logEvent(evt)
+{
   var entry = document.createElement('li');
   entry.className = 'log-entry';
-  entry.textContent = ['event "', evt.type, '" @ '+ evt.target.getData()].join('');
+  entry.textContent = ['event "', evt.type, '" @ ' + evt.target.getData()].join('');
   logContainer.insertBefore(entry, logContainer.firstChild);
 }
 

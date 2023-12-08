@@ -118,13 +118,14 @@ function addLocationsToPanel(locations)
   nodeOL.style.marginLeft = '5%';
   nodeOL.style.marginRight = '5%';
 
-
   for (i = 0; i < locations.length; i += 1)
   {
     let location = locations[i];
     var li = document.createElement('li'),
       divLabel = document.createElement('div'),
+      button = document.createElement('button'),
       address = location.address,
+      access = location.access,
       content = '<strong style="font-size: large;">' + address.label + '</strong></br>';
     position = location.position;
 
@@ -141,8 +142,16 @@ function addLocationsToPanel(locations)
 
     divLabel.innerHTML = content;
     li.appendChild(divLabel);
+    button.appendChild(li);
+    button.addEventListener('click', function (evt)
+    {
+      console.log(locations[i].position);
+      map.setCenter(locations[i].position);
+      openBubble(
+        locations[i].position, evt.target.innerHTML);
+    }, false);
 
-    nodeOL.appendChild(li);
+    nodeOL.appendChild(button);
   }
 
   locationsContainer.appendChild(nodeOL);

@@ -6,7 +6,7 @@
 // In your own code, replace variable window.apikey with your own apikey
 
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 
 // Step 2: specify engine type. In this example, we use HARP rendering engine, which is capable
@@ -26,7 +26,7 @@ var vectorLayer = platform.getOMVService().createLayer(style, { engineType });
 var map = new H.Map(document.getElementById('map'),
   vectorLayer, {
   engineType,
-  center: {lat: 52.51477270923461, lng: 13.39846691425174},
+  center: { lat: 52.51477270923461, lng: 13.39846691425174 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });

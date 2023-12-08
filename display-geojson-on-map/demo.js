@@ -1,12 +1,15 @@
-function showGeoJSONData (map) {
+function showGeoJSONData(map)
+{
   // Create GeoJSON reader which will download the specified file.
   // Shape of the file was obtained by using HERE Geocoding and Search API.
   // It is possible to customize look and feel of the objects.
   var reader = new H.data.geojson.Reader('data/berlin.json', {
     // This function is called each time parser detects a new map object
-    style: function (mapObject) {
+    style: function (mapObject)
+    {
       // Parsed geo objects could be styled using setStyle method
-      if (mapObject instanceof H.map.Polygon) {
+      if (mapObject instanceof H.map.Polygon)
+      {
         mapObject.setStyle({
           fillColor: 'rgba(255, 0, 0, 0.5)',
           strokeColor: 'rgba(0, 0, 255, 0.2)',
@@ -28,14 +31,14 @@ function showGeoJSONData (map) {
  */
 // Step 1: initialize communication with the platform
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 // Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'), defaultLayers.vector.normal.map, {
   zoom: 10,
-  center: {lat: 52.522763341087874, lng: 13.492702024100026},
+  center: { lat: 52.522763341087874, lng: 13.492702024100026 },
   pixelRatio: window.devicePixelRatio || 1
 });
 // add a resize listener to make sure that the map occupies the whole container

@@ -3,17 +3,18 @@
  * see: https://www.here.com/docs/bundle/routing-api-v8-api-reference/page/index.html#tag/Routing/operation/calculateRoutes
  */
 var routeRequestParams = {
-      routingMode: 'fast',
-      transportMode: 'truck',
-      origin: '40.7249546323,-74.0110042', // Manhattan
-      destination: '40.7324386599,-74.0341396', // Newport
-      return: 'polyline,travelSummary',
-      units: 'imperial',
-      spans: 'truckAttributes'
-    },
-    routes = new H.map.Group();
+  routingMode: 'fast',
+  transportMode: 'truck',
+  origin: '40.7249546323,-74.0110042', // Manhattan
+  destination: '40.7324386599,-74.0341396', // Newport
+  return: 'polyline,travelSummary',
+  units: 'imperial',
+  spans: 'truckAttributes'
+},
+  routes = new H.map.Group();
 
-function calculateRoutes(platform) {
+function calculateRoutes(platform)
+{
   var router = platform.getRoutingService(null, 8);
 
   // The blue route showing a simple truck route
@@ -46,8 +47,10 @@ function calculateRoutes(platform) {
  * @param {H.service.RoutingService} router The service stub for requesting the Routing API
  * @param {mapsjs.map.SpatialStyle.Options} style The style of the route to display on the map
  */
-function calculateRoute (router, params, style) {
-  router.calculateRoute(params, function(result) {
+function calculateRoute(router, params, style)
+{
+  router.calculateRoute(params, function (result)
+  {
     addRouteShapeToMap(style, result.routes[0]);
   }, console.error);
 }
@@ -62,7 +65,7 @@ var mapContainer = document.getElementById('map');
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 
 var defaultLayers = platform.createDefaultLayers();
@@ -70,8 +73,8 @@ var defaultLayers = platform.createDefaultLayers();
 // Step 2: initialize a map - this map is centered over Berlin
 var map = new H.Map(mapContainer,
   // Set truck restriction layer as a base map
-  defaultLayers.vector.normal.truck,{
-  center: {lat: 40.745390, lng: -74.022917},
+  defaultLayers.vector.normal.truck, {
+  center: { lat: 40.745390, lng: -74.022917 },
   zoom: 13.2,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -89,8 +92,10 @@ map.addObject(routes);
  * Creates a H.map.Polyline from the shape of the route and adds it to the map.
  * @param {Object} route A route as received from the H.service.RoutingService
  */
-function addRouteShapeToMap(style, route){
-  route.sections.forEach((section) => {
+function addRouteShapeToMap(style, route)
+{
+  route.sections.forEach((section) =>
+  {
     // decode LineString from the flexible polyline
     let linestring = H.geo.LineString.fromFlexiblePolyline(section.polyline);
 
@@ -109,4 +114,4 @@ function addRouteShapeToMap(style, route){
 }
 
 // Now use the map as required...
-calculateRoutes (platform);
+calculateRoutes(platform);

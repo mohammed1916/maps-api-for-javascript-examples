@@ -6,19 +6,20 @@
  *
  * @param {H.service.Platform} platform A stub class to access HERE services
  */
-function calculateIsolineRoute(platform) {
+function calculateIsolineRoute(platform)
+{
   var router = platform.getRoutingService(null, 8),
-      routeRequestParams = {
-        'origin': '52.51605,13.37787',
-        'range[type]': 'consumption',
-        'range[values]': 20000,
-        'transportMode': 'car',
-        'ev[freeFlowSpeedTable]': '0,0.239,27,0.239,45,0.259,60,0.196,75,0.207,90,0.238,100,0.26,110,0.296,120,0.337,130,0.351,250,0.351',
-        'ev[trafficSpeedTable]': '0,0.349,27,0.319,45,0.329,60,0.266,75,0.287,90,0.318,100,0.33,110,0.335,120,0.35,130,0.36,250,0.36',
-        'ev[ascent]': 9,
-        'ev[descent]': 4.3,
-        'ev[auxiliaryConsumption]': 1.8
-      };
+    routeRequestParams = {
+      'origin': '52.51605,13.37787',
+      'range[type]': 'consumption',
+      'range[values]': 20000,
+      'transportMode': 'car',
+      'ev[freeFlowSpeedTable]': '0,0.239,27,0.239,45,0.259,60,0.196,75,0.207,90,0.238,100,0.26,110,0.296,120,0.337,130,0.351,250,0.351',
+      'ev[trafficSpeedTable]': '0,0.349,27,0.319,45,0.329,60,0.266,75,0.287,90,0.318,100,0.33,110,0.335,120,0.35,130,0.36,250,0.36',
+      'ev[ascent]': 9,
+      'ev[descent]': 4.3,
+      'ev[auxiliaryConsumption]': 1.8
+    };
 
   // add a marker to display a starting point of the vehicle
   map.addObject(new H.map.Marker({
@@ -37,7 +38,8 @@ function calculateIsolineRoute(platform) {
  * This function will be called once the Routing REST API provides a response
  * @param {Object} result A JSON object representing the calculated range.
  */
-function onSuccess(result) {
+function onSuccess(result)
+{
   var route = result.isolines[0];
 
   /*
@@ -52,7 +54,8 @@ function onSuccess(result) {
  * This function will be called if a communication error occurs during the JSON-P request
  * @param {Object} error The error message received.
  */
-function onError(error) {
+function onError(error)
+{
   alert('Can\'t reach the remote server');
 }
 
@@ -67,7 +70,7 @@ var mapContainer = document.getElementById('map'),
 // Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 
 var defaultLayers = platform.createDefaultLayers();
@@ -75,7 +78,7 @@ var defaultLayers = platform.createDefaultLayers();
 // Step 2: initialize a map - this map is centered over Berlin
 var map = new H.Map(mapContainer,
   defaultLayers.vector.normal.map, {
-  center: {lat: 52.5160, lng: 13.3779},
+  center: { lat: 52.5160, lng: 13.3779 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -95,8 +98,10 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
  * Creates a H.map.Polyline from the shape of the route and adds it to the map.
  * @param {Object} route A route as received from the H.service.RoutingService
  */
-function addRouteShapeToMap(route) {
-  route.polygons.forEach((section) => {
+function addRouteShapeToMap(route)
+{
+  route.polygons.forEach((section) =>
+  {
     // decode LineString from the flexible polyline
     let linestring = H.geo.LineString.fromFlexiblePolyline(section.outer);
 

@@ -3,16 +3,17 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function addPolylineToMap(map) {
+function addPolylineToMap(map)
+{
   var lineString = new H.geo.LineString();
 
-  lineString.pushPoint({lat:53.3477, lng:-6.2597});
-  lineString.pushPoint({lat:51.5008, lng:-0.1224});
-  lineString.pushPoint({lat:48.8567, lng:2.3508});
-  lineString.pushPoint({lat:52.5166, lng:13.3833});
+  lineString.pushPoint({ lat: 53.3477, lng: -6.2597 });
+  lineString.pushPoint({ lat: 51.5008, lng: -0.1224 });
+  lineString.pushPoint({ lat: 48.8567, lng: 2.3508 });
+  lineString.pushPoint({ lat: 52.5166, lng: 13.3833 });
 
   map.addObject(new H.map.Polyline(
-    lineString, { style: { lineWidth: 4 }}
+    lineString, { style: { lineWidth: 4 } }
   ));
 }
 
@@ -23,14 +24,14 @@ function addPolylineToMap(map) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:52, lng:5},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 52, lng: 5 },
   zoom: 5,
   pixelRatio: window.devicePixelRatio || 1
 });

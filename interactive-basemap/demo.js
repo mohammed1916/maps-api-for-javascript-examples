@@ -2,15 +2,18 @@
 /**
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function setInteractive(map){
+function setInteractive(map)
+{
   // get the vector provider from the base layer
   var provider = map.getBaseLayer().getProvider();
 
   // get the style object for the base layer
   var style = provider.getStyle();
 
-  var changeListener = (evt) => {
-    if (style.getState() === H.map.Style.State.READY) {
+  var changeListener = (evt) =>
+  {
+    if (style.getState() === H.map.Style.State.READY)
+    {
       style.removeEventListener('change', changeListener);
 
       // enable interactions for the desired map features
@@ -31,14 +34,14 @@ function setInteractive(map){
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat: 52.51477270923461, lng: 13.39846691425174},
+  center: { lat: 52.51477270923461, lng: 13.39846691425174 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -57,7 +60,8 @@ var bubble;
 /**
  * @param {H.mapevents.Event} e The event object
  */
-function onTap(evt) {
+function onTap(evt)
+{
   // calculate infobubble position from the cursor screen coordinates
   let position = map.screenToGeo(
     evt.currentPointer.viewportX,
@@ -70,15 +74,17 @@ function onTap(evt) {
   let content = '<div style="width:250px">It is a ' + props.kind + ' ' + (props.kind_detail || '') +
     (props.population ? '<br /> population: ' + props.population : '') +
     '<br /> local name is ' + props['name'] +
-    (props['name:ar'] ? '<br /> name in Arabic is '+ props['name:ar'] : '') + '</div>';
+    (props['name:ar'] ? '<br /> name in Arabic is ' + props['name:ar'] : '') + '</div>';
 
   // Create a bubble, if not created yet
-  if (!bubble) {
+  if (!bubble)
+  {
     bubble = new H.ui.InfoBubble(position, {
       content: content
     });
     ui.addBubble(bubble);
-  } else {
+  } else
+  {
     // Reuse existing bubble object
     bubble.setPosition(position);
     bubble.setContent(content);

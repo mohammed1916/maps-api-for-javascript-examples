@@ -4,15 +4,18 @@
  * and modifies colors of the map features within that listener.
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function changeFeatureStyle(map){
+function changeFeatureStyle(map)
+{
   // get the vector provider from the base layer
   var provider = map.getBaseLayer().getProvider();
 
   // get the style object for the base layer
   var parkStyle = provider.getStyle();
 
-  var changeListener = (evt) => {
-    if (parkStyle.getState() === H.map.Style.State.READY) {
+  var changeListener = (evt) =>
+  {
+    if (parkStyle.getState() === H.map.Style.State.READY)
+    {
       parkStyle.removeEventListener('change', changeListener);
 
       // query the sub-section of the style configuration
@@ -20,8 +23,8 @@ function changeFeatureStyle(map){
       var parkConfig = parkStyle.extractConfig(['landuse.park', 'landuse.builtup']);
       // change the color, for the description of the style section
       // see the Developer's guide
-      parkConfig.layers.landuse.park.draw.polygons.color = '#2ba815'
-      parkConfig.layers.landuse.builtup.draw.polygons.color = '#676d67'
+      parkConfig.layers.landuse.park.draw.polygons.color = '#2ba815';
+      parkConfig.layers.landuse.builtup.draw.polygons.color = '#676d67';
 
       // merge the configuration back to the base layer configuration
       parkStyle.mergeConfig(parkConfig);
@@ -39,14 +42,14 @@ function changeFeatureStyle(map){
 // In your own code, replace variable window.apikey with your own apikey
 
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map, {
-  center: {lat: 52.51477270923461, lng: 13.39846691425174},
+  center: { lat: 52.51477270923461, lng: 13.39846691425174 },
   zoom: 13,
   pixelRatio: window.devicePixelRatio || 1
 });

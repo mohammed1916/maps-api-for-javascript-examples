@@ -6,21 +6,22 @@
  *
  * @param  {H.Map} map      A HERE Map instance within the application
  */
-function addMarkersToMap(map) {
-    var parisMarker = new H.map.Marker({lat:48.8567, lng:2.3508});
-    map.addObject(parisMarker);
+function addMarkersToMap(map)
+{
+  var parisMarker = new H.map.Marker({ lat: 48.8567, lng: 2.3508 });
+  map.addObject(parisMarker);
 
-    var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
-    map.addObject(romeMarker);
+  var romeMarker = new H.map.Marker({ lat: 41.9, lng: 12.5 });
+  map.addObject(romeMarker);
 
-    var berlinMarker = new H.map.Marker({lat:52.5166, lng:13.3833});
-    map.addObject(berlinMarker);
+  var berlinMarker = new H.map.Marker({ lat: 52.5166, lng: 13.3833 });
+  map.addObject(berlinMarker);
 
-    var madridMarker = new H.map.Marker({lat:40.4, lng: -3.6833});
-    map.addObject(madridMarker);
+  var madridMarker = new H.map.Marker({ lat: 40.4, lng: -3.6833 });
+  map.addObject(madridMarker);
 
-    var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
-    map.addObject(londonMarker);
+  var londonMarker = new H.map.Marker({ lat: 51.5008, lng: -0.1224 });
+  map.addObject(londonMarker);
 }
 
 /**
@@ -30,14 +31,14 @@ function addMarkersToMap(map) {
 //Step 1: initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-  apikey: window.apikey
+  apikey: "pWeYDWkQb_citdxQIiHestMcjrTwF3M8_QtMkPz657Q"
 });
 var defaultLayers = platform.createDefaultLayers();
 
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  center: {lat:50, lng:5},
+  defaultLayers.vector.normal.map, {
+  center: { lat: 50, lng: 5 },
   zoom: 4,
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -53,6 +54,7 @@ var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 // Now use the map as required...
-window.onload = function () {
+window.onload = function ()
+{
   addMarkersToMap(map);
-}
+};
