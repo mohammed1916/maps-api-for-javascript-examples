@@ -1,0 +1,2648 @@
+{
+    "routes": [
+        {
+            "geometry": "qtknAcruhNfGei@km@a@m[}DuAzFaS{EmE`@w@gKmSaFaD}GwI[h@oFoLkAr@wLaNuAXaCc_@mDcHwByFBF{Px@EXuGq[IaCc@n@sB{ZcBRqFyDUXqKcQgDSpD",
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "geometry": "qtknAcruhN?Cv@iGJw@@IxAqM",
+                            "maneuver": {
+                                "bearing_after": 99,
+                                "bearing_before": 0,
+                                "location": [
+                                    80.233463,
+                                    13.008248
+                                ],
+                                "type": "depart",
+                                "instruction": "Head east on Sardar Patel Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Sardar Patel Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "entry": [
+                                        true
+                                    ],
+                                    "bearings": [
+                                        99
+                                    ],
+                                    "location": [
+                                        80.233463,
+                                        13.008248
+                                    ]
+                                }
+                            ],
+                            "weight": 425.6,
+                            "duration": 106.5,
+                            "distance": 443.3
+                        },
+                        {
+                            "geometry": "qoknAekvhNl@uFx@mH",
+                            "maneuver": {
+                                "bearing_after": 99,
+                                "bearing_before": 99,
+                                "location": [
+                                    80.237471,
+                                    13.007452
+                                ],
+                                "modifier": "slight left",
+                                "type": "continue",
+                                "instruction": "Make a slight left to stay on Sardar Patel Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Sardar Patel Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        101,
+                                        104,
+                                        281
+                                    ],
+                                    "location": [
+                                        80.237471,
+                                        13.007452
+                                    ]
+                                }
+                            ],
+                            "weight": 154.2,
+                            "duration": 81.5,
+                            "distance": 302.7
+                        },
+                        {
+                            "geometry": "ilknAi|vhN_Fa@gIKuFBq@@eEF{J@y@Ce@CqAI{BQcCU_@E_BUOCsASwAS}@M{Cq@",
+                            "maneuver": {
+                                "bearing_after": 7,
+                                "bearing_before": 99,
+                                "location": [
+                                    80.240213,
+                                    13.006933
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Gandhi Mandapam Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Gandhi Mandapam Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 3,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        165,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.240213,
+                                        13.006933
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        120,
+                                        195,
+                                        300
+                                    ],
+                                    "location": [
+                                        80.241082,
+                                        13.018119
+                                    ]
+                                }
+                            ],
+                            "weight": 836.8000000000001,
+                            "duration": 332.3,
+                            "distance": 1343.6
+                        },
+                        {
+                            "geometry": "cwmnAicwhNuAzF",
+                            "maneuver": {
+                                "bearing_after": 288,
+                                "bearing_before": 16,
+                                "location": [
+                                    80.241327,
+                                    13.018897
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Valliammai Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Valliammai Road",
+                            "intersections": [
+                                {
+                                    "out": 2,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.241327,
+                                        13.018897
+                                    ]
+                                }
+                            ],
+                            "weight": 38.8,
+                            "duration": 38.8,
+                            "distance": 144
+                        },
+                        {
+                            "geometry": "yymnAm{vhNwBi@eCk@yBi@iG{AuBRwAL",
+                            "maneuver": {
+                                "bearing_after": 18,
+                                "bearing_before": 288,
+                                "location": [
+                                    80.240073,
+                                    13.019325
+                                ],
+                                "modifier": "right",
+                                "type": "new name",
+                                "instruction": "Continue right onto Arunachalam Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Arunachalam Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105
+                                    ],
+                                    "location": [
+                                        80.240073,
+                                        13.019325
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.24028,
+                                        13.019928
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.240706,
+                                        13.021208
+                                    ]
+                                },
+                                {
+                                    "out": 3,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        75,
+                                        195,
+                                        270,
+                                        345
+                                    ],
+                                    "location": [
+                                        80.241167,
+                                        13.022542
+                                    ]
+                                },
+                                {
+                                    "out": 3,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        75,
+                                        165,
+                                        255,
+                                        345
+                                    ],
+                                    "location": [
+                                        80.241067,
+                                        13.023128
+                                    ]
+                                }
+                            ],
+                            "weight": 122.8,
+                            "duration": 122.8,
+                            "distance": 493.2
+                        },
+                        {
+                            "geometry": "itnnAgawhNSeAOyAIqAIuC",
+                            "maneuver": {
+                                "bearing_after": 74,
+                                "bearing_before": 351,
+                                "location": [
+                                    80.241,
+                                    13.023574
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Dhandayudhapandi 1st Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Dhandayudhapandi 1st Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        75,
+                                        165,
+                                        240
+                                    ],
+                                    "location": [
+                                        80.241,
+                                        13.023574
+                                    ]
+                                }
+                            ],
+                            "weight": 56.9,
+                            "duration": 56.9,
+                            "distance": 215.4
+                        },
+                        {
+                            "geometry": "avnnAomwhNs@MUG",
+                            "maneuver": {
+                                "bearing_after": 14,
+                                "bearing_before": 85,
+                                "location": [
+                                    80.242962,
+                                    13.023851
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Gandhi Mandapam Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Gandhi Mandapam Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.242962,
+                                        13.023851
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.24303,
+                                        13.024109
+                                    ]
+                                }
+                            ],
+                            "weight": 26.299999999999997,
+                            "duration": 10.2,
+                            "distance": 42.7
+                        },
+                        {
+                            "geometry": "kxnnAenwhN_OoD",
+                            "maneuver": {
+                                "bearing_after": 18,
+                                "bearing_before": 18,
+                                "location": [
+                                    80.243068,
+                                    13.024221
+                                ],
+                                "modifier": "straight",
+                                "type": "new name",
+                                "instruction": "Continue onto Kotturpuram Bridge"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Kotturpuram Bridge",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195
+                                    ],
+                                    "location": [
+                                        80.243068,
+                                        13.024221
+                                    ]
+                                }
+                            ],
+                            "weight": 185,
+                            "duration": 72.2,
+                            "distance": 300.7
+                        },
+                        {
+                            "geometry": "khonAuswhNYIWIQGMIGEMMEEEICGEKGUMo@",
+                            "maneuver": {
+                                "bearing_after": 18,
+                                "bearing_before": 18,
+                                "location": [
+                                    80.243954,
+                                    13.026783
+                                ],
+                                "modifier": "straight",
+                                "type": "new name",
+                                "instruction": "Continue onto Turnbulls Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Turnbulls Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195
+                                    ],
+                                    "location": [
+                                        80.243954,
+                                        13.026783
+                                    ]
+                                }
+                            ],
+                            "weight": 79.8,
+                            "duration": 31.2,
+                            "distance": 129.6
+                        },
+                        {
+                            "geometry": "_monAyxwhNY_AIg@Ua@WK}AK{AGgBAc@AQC",
+                            "maneuver": {
+                                "bearing_after": 67,
+                                "bearing_before": 71,
+                                "location": [
+                                    80.244774,
+                                    13.027523
+                                ],
+                                "modifier": "slight left",
+                                "type": "continue",
+                                "instruction": "Make a slight left to stay on Turnbulls Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Turnbulls Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        68,
+                                        77,
+                                        252
+                                    ],
+                                    "location": [
+                                        80.244774,
+                                        13.027523
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        75,
+                                        255,
+                                        300
+                                    ],
+                                    "location": [
+                                        80.245094,
+                                        13.027649
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.245637,
+                                        13.029558
+                                    ]
+                                }
+                            ],
+                            "weight": 114.8,
+                            "duration": 77.7,
+                            "distance": 288.6
+                        },
+                        {
+                            "geometry": "izonAk~whNBUJqAJiAL}@",
+                            "maneuver": {
+                                "bearing_after": 102,
+                                "bearing_before": 11,
+                                "location": [
+                                    80.245657,
+                                    13.029653
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto Pasumpon Muthuramalingar Thevar Salai"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Pasumpon Muthuramalingar Thevar Salai",
+                            "intersections": [
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.245657,
+                                        13.029653
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 3,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        165,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.245771,
+                                        13.029628
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.246551,
+                                        13.029506
+                                    ]
+                                }
+                            ],
+                            "weight": 91.5,
+                            "duration": 41.8,
+                            "distance": 132.2
+                        },
+                        {
+                            "geometry": "_yonA{exhN_BU",
+                            "maneuver": {
+                                "bearing_after": 12,
+                                "bearing_before": 101,
+                                "location": [
+                                    80.246858,
+                                    13.029444
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Austin Nagar First Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Austin Nagar First Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.246858,
+                                        13.029444
+                                    ]
+                                }
+                            ],
+                            "weight": 17.3,
+                            "duration": 17.3,
+                            "distance": 54
+                        },
+                        {
+                            "geometry": "_|onAqfxhNAB",
+                            "maneuver": {
+                                "bearing_after": 307,
+                                "bearing_before": 12,
+                                "location": [
+                                    80.246972,
+                                    13.029917
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Cenotaph 1st Lane"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Cenotaph 1st Lane",
+                            "intersections": [
+                                {
+                                    "out": 2,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        135,
+                                        195,
+                                        315
+                                    ],
+                                    "location": [
+                                        80.246972,
+                                        13.029917
+                                    ]
+                                }
+                            ],
+                            "weight": 3.7,
+                            "duration": 3.7,
+                            "distance": 3
+                        },
+                        {
+                            "geometry": "a|onAmfxhNm@UaBOu@EgCM",
+                            "maneuver": {
+                                "bearing_after": 23,
+                                "bearing_before": 307,
+                                "location": [
+                                    80.24695,
+                                    13.029934
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto Ganapathy Colony Main Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Ganapathy Colony Main Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        30,
+                                        135,
+                                        315
+                                    ],
+                                    "location": [
+                                        80.24695,
+                                        13.029934
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        210
+                                    ],
+                                    "location": [
+                                        80.247055,
+                                        13.030156
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        195,
+                                        315
+                                    ],
+                                    "location": [
+                                        80.247137,
+                                        13.030653
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180
+                                    ],
+                                    "location": [
+                                        80.247168,
+                                        13.03092
+                                    ]
+                                }
+                            ],
+                            "weight": 49.7,
+                            "duration": 49.7,
+                            "distance": 188.6
+                        },
+                        {
+                            "geometry": "ofpnAghxhNNiCBa@LsBFiAHmA",
+                            "maneuver": {
+                                "bearing_after": 95,
+                                "bearing_before": 5,
+                                "location": [
+                                    80.247244,
+                                    13.031595
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Cenotaph 2nd Lane"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Cenotaph 2nd Lane",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        180,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.247244,
+                                        13.031595
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.247927,
+                                        13.031517
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.248103,
+                                        13.031496
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.249046,
+                                        13.031388
+                                    ]
+                                }
+                            ],
+                            "weight": 65.30000000000001,
+                            "duration": 65.30000000000001,
+                            "distance": 239.9
+                        },
+                        {
+                            "geometry": "{dpnA_vxhNuBU",
+                            "maneuver": {
+                                "bearing_after": 9,
+                                "bearing_before": 95,
+                                "location": [
+                                    80.249443,
+                                    13.031342
+                                ],
+                                "modifier": "left",
+                                "type": "end of road",
+                                "instruction": "Turn left onto Sriram Nagar West Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Sriram Nagar West Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.249443,
+                                        13.031342
+                                    ]
+                                }
+                            ],
+                            "weight": 23.9,
+                            "duration": 23.9,
+                            "distance": 66.7
+                        },
+                        {
+                            "geometry": "qhpnAuvxhNG\\",
+                            "maneuver": {
+                                "bearing_after": 282,
+                                "bearing_before": 9,
+                                "location": [
+                                    80.249554,
+                                    13.031932
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Sriram Nagar North Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Sriram Nagar North Street",
+                            "intersections": [
+                                {
+                                    "out": 2,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        105,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.249554,
+                                        13.031932
+                                    ]
+                                }
+                            ],
+                            "weight": 8,
+                            "duration": 8,
+                            "distance": 17.2
+                        },
+                        {
+                            "geometry": "yhpnAwuxhNuD]",
+                            "maneuver": {
+                                "bearing_after": 8,
+                                "bearing_before": 282,
+                                "location": [
+                                    80.249399,
+                                    13.031967
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto Kamatchi Nagar"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Kamatchi Nagar",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.249399,
+                                        13.031967
+                                    ]
+                                }
+                            ],
+                            "weight": 28.4,
+                            "duration": 28.4,
+                            "distance": 102.5
+                        },
+                        {
+                            "geometry": "onpnAuvxhN@]",
+                            "maneuver": {
+                                "bearing_after": 92,
+                                "bearing_before": 8,
+                                "location": [
+                                    80.249547,
+                                    13.032877
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto TTK 1st Cross"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "TTK 1st Cross",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.249547,
+                                        13.032877
+                                    ]
+                                }
+                            ],
+                            "weight": 11.4,
+                            "duration": 11.4,
+                            "distance": 17.1
+                        },
+                        {
+                            "geometry": "mnpnAswxhNoDa@",
+                            "maneuver": {
+                                "bearing_after": 9,
+                                "bearing_before": 92,
+                                "location": [
+                                    80.249704,
+                                    13.032866
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto 3rd Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "3rd Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.249704,
+                                        13.032866
+                                    ]
+                                }
+                            ],
+                            "weight": 28.5,
+                            "duration": 64.6,
+                            "distance": 100.3
+                        },
+                        {
+                            "geometry": "}spnAuxxhNLiABWF_@",
+                            "maneuver": {
+                                "bearing_after": 101,
+                                "bearing_before": 9,
+                                "location": [
+                                    80.249865,
+                                    13.033754
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto Alwarpet Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Alwarpet Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        105,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.249865,
+                                        13.033754
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.250241,
+                                        13.033679
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        105,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.250359,
+                                        13.033655
+                                    ]
+                                }
+                            ],
+                            "weight": 25.799999999999997,
+                            "duration": 25.799999999999997,
+                            "distance": 72.8
+                        },
+                        {
+                            "geometry": "cspnAw|xhNkEg@MCuBMkAQw@EeBQw@KOAQAm@EaIs@",
+                            "maneuver": {
+                                "bearing_after": 9,
+                                "bearing_before": 99,
+                                "location": [
+                                    80.250523,
+                                    13.033624
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Thiruvalluvar Salai"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Thiruvalluvar Salai",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.250523,
+                                        13.033624
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.25072,
+                                        13.034635
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        195
+                                    ],
+                                    "location": [
+                                        80.250735,
+                                        13.034705
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.250812,
+                                        13.035295
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.250898,
+                                        13.035682
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        180,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.250929,
+                                        13.035963
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.251024,
+                                        13.036471
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.251086,
+                                        13.036832
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        180
+                                    ],
+                                    "location": [
+                                        80.251096,
+                                        13.03692
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.251128,
+                                        13.037151
+                                    ]
+                                }
+                            ],
+                            "weight": 143.4,
+                            "duration": 143.4,
+                            "distance": 579.4
+                        },
+                        {
+                            "geometry": "gsqnAebyhNDa@",
+                            "maneuver": {
+                                "bearing_after": 98,
+                                "bearing_before": 8,
+                                "location": [
+                                    80.25139,
+                                    13.038762
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Eldams Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Eldams Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        105,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.25139,
+                                        13.038762
+                                    ]
+                                }
+                            ],
+                            "weight": 14.5,
+                            "duration": 12.1,
+                            "distance": 19
+                        },
+                        {
+                            "geometry": "asqnAgcyhNKCiCYeC]",
+                            "maneuver": {
+                                "bearing_after": 14,
+                                "bearing_before": 98,
+                                "location": [
+                                    80.251563,
+                                    13.038733
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Raja Krishna Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Raja Krishna Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        105,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.251563,
+                                        13.038733
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.251711,
+                                        13.039484
+                                    ]
+                                }
+                            ],
+                            "weight": 40.5,
+                            "duration": 40.5,
+                            "distance": 160.6
+                        },
+                        {
+                            "geometry": "}{qnAceyhNCQIGkB?G?q@?sAB",
+                            "maneuver": {
+                                "bearing_after": 73,
+                                "bearing_before": 11,
+                                "location": [
+                                    80.251855,
+                                    13.040148
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Poes Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Poes Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        75,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.251855,
+                                        13.040148
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.251991,
+                                        13.040797
+                                    ]
+                                }
+                            ],
+                            "weight": 41.9,
+                            "duration": 41.9,
+                            "distance": 156.3
+                        },
+                        {
+                            "geometry": "edrnAyeyhN@_BBsAB_B?k@@g@Aa@?q@A_C",
+                            "maneuver": {
+                                "bearing_after": 90,
+                                "bearing_before": 357,
+                                "location": [
+                                    80.251974,
+                                    13.041468
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto Varadarajapuram Main Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Varadarajapuram Main Road",
+                            "intersections": [
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.251974,
+                                        13.041468
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.252447,
+                                        13.041462
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.252867,
+                                        13.041437
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.253568,
+                                        13.041422
+                                    ]
+                                }
+                            ],
+                            "weight": 78.5,
+                            "duration": 78.5,
+                            "distance": 309.6
+                        },
+                        {
+                            "geometry": "}crnAuwyhNFGp@@",
+                            "maneuver": {
+                                "bearing_after": 178,
+                                "bearing_before": 88,
+                                "location": [
+                                    80.254829,
+                                    13.04143
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Varadarajapuram Main Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Varadarajapuram Main Road",
+                            "intersections": [
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.254829,
+                                        13.04143
+                                    ]
+                                }
+                            ],
+                            "weight": 15.4,
+                            "duration": 15.4,
+                            "distance": 34.1
+                        },
+                        {
+                            "geometry": "cbrnA{wyhNHgA@_@@e@DgAD_A",
+                            "maneuver": {
+                                "bearing_after": 97,
+                                "bearing_before": 180,
+                                "location": [
+                                    80.254863,
+                                    13.041138
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Sriman Srinivasan Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Sriman Srinivasan Road",
+                            "intersections": [
+                                {
+                                    "out": 1,
+                                    "in": 0,
+                                    "entry": [
+                                        false,
+                                        true,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        195
+                                    ],
+                                    "location": [
+                                        80.254863,
+                                        13.041138
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.255221,
+                                        13.041091
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.255375,
+                                        13.041078
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.255569,
+                                        13.041072
+                                    ]
+                                }
+                            ],
+                            "weight": 44.3,
+                            "duration": 44.3,
+                            "distance": 151.1
+                        },
+                        {
+                            "geometry": "iarnAq`zhN_DSkAIuEKmBAkCJuDP_@Bm@Iy@SYE",
+                            "maneuver": {
+                                "bearing_after": 5,
+                                "bearing_before": 94,
+                                "location": [
+                                    80.256251,
+                                    13.04101
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Kasturi Rangan Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Kasturi Rangan Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 3,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.256251,
+                                        13.04101
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.256396,
+                                        13.042188
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.256461,
+                                        13.043261
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.256414,
+                                        13.044512
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        120,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.256451,
+                                        13.046095
+                                    ]
+                                }
+                            ],
+                            "weight": 145.5,
+                            "duration": 145.5,
+                            "distance": 584.9
+                        },
+                        {
+                            "geometry": "}asnA_bzhNDMh@eB",
+                            "maneuver": {
+                                "bearing_after": 112,
+                                "bearing_before": 12,
+                                "location": [
+                                    80.256484,
+                                    13.046225
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Cathedral Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Cathedral Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        120,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.256484,
+                                        13.046225
+                                    ]
+                                }
+                            ],
+                            "weight": 77.3,
+                            "duration": 28.6,
+                            "distance": 67.6
+                        },
+                        {
+                            "geometry": "m`snAsezhNeEKqACe@Ce@I}@MaAMuBWkBU",
+                            "maneuver": {
+                                "bearing_after": 2,
+                                "bearing_before": 112,
+                                "location": [
+                                    80.257059,
+                                    13.04599
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Gopalapuram 1st Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Gopalapuram 1st Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 4,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        3,
+                                        103,
+                                        109,
+                                        202,
+                                        293
+                                    ],
+                                    "location": [
+                                        80.257059,
+                                        13.04599
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.257116,
+                                        13.046976
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180
+                                    ],
+                                    "location": [
+                                        80.257136,
+                                        13.047387
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.257161,
+                                        13.047577
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.257284,
+                                        13.048079
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.257352,
+                                        13.048414
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.257467,
+                                        13.048995
+                                    ]
+                                }
+                            ],
+                            "weight": 124.30000000000001,
+                            "duration": 100.3,
+                            "distance": 399.7
+                        },
+                        {
+                            "geometry": "svsnA{hzhNMT",
+                            "maneuver": {
+                                "bearing_after": 305,
+                                "bearing_before": 9,
+                                "location": [
+                                    80.257575,
+                                    13.049539
+                                ],
+                                "modifier": "left",
+                                "type": "end of road",
+                                "instruction": "Turn left onto Avvai Shanmugam Salai"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Avvai Shanmugam Salai",
+                            "intersections": [
+                                {
+                                    "out": 2,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        120,
+                                        195,
+                                        300
+                                    ],
+                                    "location": [
+                                        80.257575,
+                                        13.049539
+                                    ]
+                                }
+                            ],
+                            "weight": 6.8,
+                            "duration": 5.1,
+                            "distance": 13.6
+                        },
+                        {
+                            "geometry": "awsnAehzhNcDOCA",
+                            "maneuver": {
+                                "bearing_after": 4,
+                                "bearing_before": 305,
+                                "location": [
+                                    80.257473,
+                                    13.04961
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto Conron Smith Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Conron Smith Road",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        120,
+                                        300
+                                    ],
+                                    "location": [
+                                        80.257473,
+                                        13.04961
+                                    ]
+                                }
+                            ],
+                            "weight": 38.7,
+                            "duration": 26.6,
+                            "distance": 93.5
+                        },
+                        {
+                            "geometry": "i|snAwhzhNJ}BFsB{@I]A_BI",
+                            "maneuver": {
+                                "bearing_after": 94,
+                                "bearing_before": 4,
+                                "location": [
+                                    80.257555,
+                                    13.050447
+                                ],
+                                "modifier": "right",
+                                "type": "turn",
+                                "instruction": "Turn right onto North Gopalapuram 1st Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "North Gopalapuram 1st Street",
+                            "intersections": [
+                                {
+                                    "out": 1,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.257555,
+                                        13.050447
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        195
+                                    ],
+                                    "location": [
+                                        80.258819,
+                                        13.050645
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.258831,
+                                        13.050799
+                                    ]
+                                }
+                            ],
+                            "weight": 68.5,
+                            "duration": 68.5,
+                            "distance": 236.4
+                        },
+                        {
+                            "geometry": "oatnA_qzhNTwFHwBEa@",
+                            "maneuver": {
+                                "bearing_after": 94,
+                                "bearing_before": 4,
+                                "location": [
+                                    80.258876,
+                                    13.051282
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Ganapathy Colony 1st Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Ganapathy Colony 1st Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        180,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.258876,
+                                        13.051282
+                                    ]
+                                },
+                                {
+                                    "out": 1,
+                                    "in": 3,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.260123,
+                                        13.051168
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        75,
+                                        180,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.260723,
+                                        13.05112
+                                    ]
+                                }
+                            ],
+                            "weight": 57.8,
+                            "duration": 57.8,
+                            "distance": 218.8
+                        },
+                        {
+                            "geometry": "u`tnAq}zhNsBQkAKe@EA[kGi@",
+                            "maneuver": {
+                                "bearing_after": 8,
+                                "bearing_before": 78,
+                                "location": [
+                                    80.260885,
+                                    13.05115
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Poonuswamy Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Poonuswamy Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        255
+                                    ],
+                                    "location": [
+                                        80.260885,
+                                        13.05115
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.260981,
+                                        13.051731
+                                    ]
+                                },
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        15,
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.261044,
+                                        13.052113
+                                    ]
+                                }
+                            ],
+                            "weight": 81,
+                            "duration": 81,
+                            "distance": 295.4
+                        },
+                        {
+                            "geometry": "iptnA{`{hN@s@",
+                            "maneuver": {
+                                "bearing_after": 92,
+                                "bearing_before": 8,
+                                "location": [
+                                    80.261417,
+                                    13.053652
+                                ],
+                                "modifier": "right",
+                                "type": "end of road",
+                                "instruction": "Turn right onto Muthu Street"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Muthu Street",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        195,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.261417,
+                                        13.053652
+                                    ]
+                                }
+                            ],
+                            "weight": 14.7,
+                            "duration": 14.7,
+                            "distance": 29
+                        },
+                        {
+                            "geometry": "gptnAob{hNqAI",
+                            "maneuver": {
+                                "bearing_after": 5,
+                                "bearing_before": 92,
+                                "location": [
+                                    80.261684,
+                                    13.053639
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "",
+                            "intersections": [
+                                {
+                                    "out": 0,
+                                    "in": 2,
+                                    "entry": [
+                                        true,
+                                        true,
+                                        false
+                                    ],
+                                    "bearings": [
+                                        0,
+                                        105,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.261684,
+                                        13.053639
+                                    ]
+                                }
+                            ],
+                            "weight": 19.1,
+                            "duration": 19.1,
+                            "distance": 45.9
+                        },
+                        {
+                            "geometry": "yrtnAyb{hNQ~BA`@",
+                            "maneuver": {
+                                "bearing_after": 277,
+                                "bearing_before": 5,
+                                "location": [
+                                    80.261733,
+                                    13.054049
+                                ],
+                                "modifier": "left",
+                                "type": "turn",
+                                "instruction": "Turn left onto Peters Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Peters Road",
+                            "intersections": [
+                                {
+                                    "out": 2,
+                                    "in": 1,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        180,
+                                        285
+                                    ],
+                                    "location": [
+                                        80.261733,
+                                        13.054049
+                                    ]
+                                },
+                                {
+                                    "out": 2,
+                                    "in": 0,
+                                    "entry": [
+                                        true,
+                                        false,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        90,
+                                        105,
+                                        270
+                                    ],
+                                    "location": [
+                                        80.261092,
+                                        13.054136
+                                    ]
+                                }
+                            ],
+                            "weight": 37.2,
+                            "duration": 21.200000000000003,
+                            "distance": 88.5
+                        },
+                        {
+                            "geometry": "mstnAw}zhN?N",
+                            "maneuver": {
+                                "bearing_after": 270,
+                                "bearing_before": 275,
+                                "location": [
+                                    80.260923,
+                                    13.054153
+                                ],
+                                "modifier": "slight left",
+                                "type": "continue",
+                                "instruction": "Make a slight left to stay on Peters Road"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Peters Road",
+                            "intersections": [
+                                {
+                                    "out": 1,
+                                    "in": 0,
+                                    "entry": [
+                                        false,
+                                        true,
+                                        true
+                                    ],
+                                    "bearings": [
+                                        96,
+                                        271,
+                                        277
+                                    ],
+                                    "location": [
+                                        80.260923,
+                                        13.054153
+                                    ]
+                                }
+                            ],
+                            "weight": 3.4,
+                            "duration": 2.2,
+                            "distance": 9.3
+                        },
+                        {
+                            "geometry": "mstnAg}zhN",
+                            "maneuver": {
+                                "bearing_after": 0,
+                                "bearing_before": 269,
+                                "location": [
+                                    80.260837,
+                                    13.054151
+                                ],
+                                "modifier": "left",
+                                "type": "arrive",
+                                "instruction": "You have arrived at your destination, on the left"
+                            },
+                            "mode": "cycling",
+                            "driving_side": "right",
+                            "name": "Peters Road",
+                            "intersections": [
+                                {
+                                    "in": 0,
+                                    "entry": [
+                                        true
+                                    ],
+                                    "bearings": [
+                                        89
+                                    ],
+                                    "location": [
+                                        80.260837,
+                                        13.054151
+                                    ]
+                                }
+                            ],
+                            "weight": 0,
+                            "duration": 0,
+                            "distance": 0
+                        }
+                    ],
+                    "summary": "Sardar Patel Road, Gandhi Mandapam Road",
+                    "weight": 3447.3,
+                    "duration": 2216.7,
+                    "distance": 8190.8
+                }
+            ],
+            "weight_name": "cyclability",
+            "weight": 3447.3,
+            "duration": 2216.7,
+            "distance": 8190.8
+        }
+    ],
+    "waypoints": [
+        {
+            "distance": 4.707858959170868,
+            "name": "Sardar Patel Road",
+            "location": [
+                80.233463,
+                13.008248
+            ]
+        },
+        {
+            "distance": 16.707499958656864,
+            "name": "Peters Road",
+            "location": [
+                80.260837,
+                13.054151
+            ]
+        }
+    ],
+    "code": "Ok",
+    "uuid": "L_bdmw52yQxa1KTC_buuWzfc5FVZPY-IpWDIFvWFXBUk7p7qHq9ZQg=="
+}

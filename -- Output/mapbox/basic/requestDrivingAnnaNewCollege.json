@@ -1,0 +1,104 @@
+{
+    "routes": [
+        {
+            "geometry": "qtknAcruhNjHim@PuCHsK|LzBJiD~Ob@dCh@zCc@zNdB~EG?~CvGXGxC",
+            "legs": [
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 1604.8,
+                    "duration": 744.9,
+                    "distance": 2685
+                }
+            ],
+            "weight_name": "cyclability",
+            "weight": 1604.8,
+            "duration": 744.9,
+            "distance": 2685
+        }
+    ],
+    "waypoints": [
+        {
+            "distance": 4.707858959170868,
+            "name": "Sardar Patel Road",
+            "location": [
+                80.233463,
+                13.008248
+            ]
+        },
+        {
+            "distance": 428.5208105703248,
+            "name": "",
+            "location": [
+                80.241494,
+                12.995131
+            ]
+        }
+    ],
+    "code": "Ok",
+    "uuid": "aIC9-xrGAXkP9O35LzvR13wtEcI66aYziyVuofJ25PEi-EB8aiUt4w=="
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "routes": [
+        {
+            "geometry": "qtknAcruhN}kpCdieBcn|BwkU{ci@uzp@sikBz}c@urwCaxu@g}rEl|PawsAxykB_nzGnzaCi{j@c|PqzdFtqsEcygBb{WclkGwq~@enYr~QgyIgpoA_jh@ued@}eaCnrUq`wBisaAoueB`ec@ggmAyblAcb_F}{wAarbFwzIscpCfs{@aj]qxeA}tz@~aY",
+            "legs": [
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 816611,
+                    "duration": 638939,
+                    "distance": 2515089
+                }
+            ],
+            "weight_name": "cyclability",
+            "weight": 816611,
+            "duration": 638939,
+            "distance": 2515089
+        }
+    ],
+    "waypoints": [
+        {
+            "distance": 4.707858959170868,
+            "name": "Sardar Patel Road",
+            "location": [
+                80.233463,
+                13.008248
+            ]
+        },
+        {
+            "distance": 0.8692044853316778,
+            "name": "",
+            "location": [
+                79.423164,
+                28.357243
+            ]
+        }
+    ],
+    "code": "Ok",
+    "uuid": "vv7AliQ_IzBINrVYHQPMs3WWJFIg3Z1J1UPhvSqYwBfOaqvze5iZRg=="
+}

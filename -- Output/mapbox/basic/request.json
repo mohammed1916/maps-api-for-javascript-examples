@@ -1,0 +1,34 @@
+# Request directions with no additional options
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/cycling/-122.42,37.78;-77.03,38.91?access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Request to access speed limit information using the maxspeed annotation
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/-122.39636,37.79129;-122.39732,37.79283;-122.39606,37.79349?annotations=maxspeed&overview=full&geometries=geojson&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Request directions with radiuses and a polyline6 response through multiple waypoints
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.42,52.5;13.41,52.5?radiuses=40;;100&geometries=polyline6&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Specify bearings and radiuses
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.42,52.5;13.43,52.5?bearings=60,45;;45,45&radiuses=100;100;100&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Assign layers to waypoints, to handle ambiguities in the case of multi-level roads
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.42,52.5;13.43,52.5?layers=-1;;3&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Request a route that approaches the destination on the curb of the driving side
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.43,52.5?approaches=unrestricted;curb&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Request directions with voice and banner instructions specifying waypoint_names
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/cycling/-122.42,37.78;-77.03,38.91?steps=true&voice_instructions=true&banner_instructions=true&voice_units=imperial&waypoint_names=Home;Work&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Specify waypoints
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.42,52.5;13.43,52.5?waypoints=0;2&access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg"
+
+# Specify a departure time
+
+$ curl "https://api.mapbox.com/directions/v5/mapbox/driving/-122.396112,37.791399;-122.433904,37.757812?access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg&depart_at=2019-05-02T15:00"

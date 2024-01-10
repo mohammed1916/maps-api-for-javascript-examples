@@ -1,0 +1,6 @@
+https: //api.mapbox.com/directions/v5/mapbox/cycling/13.02063,80.18525;13.04072,80.17747?access_token=pk.eyJ1IjoiY3VyaW91c2RldmVsb3BlciIsImEiOiJjbHBxeWxwMmEwNGIxMnJwOHBxcnljcm5uIn0.81dOxnYDrDAFuboiqrftDg
+{
+    "message": "No route found",
+    "code": "NoRoute",
+    "routes": []
+}
